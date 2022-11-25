@@ -13,6 +13,7 @@ const InspectionForm = () => {
     return (
         <Formik
             initialValues={{
+                clientNumber: '',
                 airFilter: '',
                 oilCondition: '',
                 bladeCondition: '',
@@ -27,6 +28,22 @@ const InspectionForm = () => {
         >
             <Form>
             <h1>Inspection Form</h1>
+
+                <FormGroup row>
+                    <Label htmlFor='clientNumber' md-2>
+                        Client Number
+                    </Label>
+                    <Col md='10'>
+                        <Field 
+                        name='clientNumber'
+                        id='clientNumber'
+                        as='textarea'
+                        rows='1'
+                        className='form-control'
+                        required />
+                    </Col>
+                </FormGroup>
+
                 <FormGroup row>
                     <Label htmlFor='airFilter' check md={{ size: 4, offset: 2 }}>
                         <Field name='airFilter' type='checkbox' className='form-check-input'
@@ -37,7 +54,8 @@ const InspectionForm = () => {
                         <Field 
                         name='airFilter'
                         as='select'
-                        className='form-control' >
+                        className='form-control' 
+                        required>
                             <option>Good</option>
                             <option>OK</option>
                             <option>Needs Replaced</option>
@@ -56,7 +74,8 @@ const InspectionForm = () => {
                         <Field 
                         name='oilCondition'
                         as='select'
-                        className='form-control' >
+                        className='form-control'
+                        required >
                             <option>Good / Clean</option>
                             <option>OK / Still Transparent</option>
                             <option>Needs Replaced / Dark</option>
@@ -75,7 +94,8 @@ const InspectionForm = () => {
                         <Field 
                         name='bladeCondition'
                         as='select'
-                        className='form-control' >
+                        className='form-control' 
+                        required>
                             <option>Good</option>
                             <option>OK</option>
                             <option>Needs Replaced</option>
@@ -94,7 +114,8 @@ const InspectionForm = () => {
                         <Field 
                         name='bladeNum'
                         as='select'
-                        className='form-control' >
+                        className='form-control' 
+                        required>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -105,15 +126,15 @@ const InspectionForm = () => {
 
                 <FormGroup row>
                     <Label htmlFor='machineCondition' check md={{ size: 4, offset: 2 }}>
-                        <Field name='machineCondition' type='checkbox' className='form-check-input'
-                        /> {' '}
+                       
                         General Machine Condition
                     </Label>
                     <Col md='4'>
                         <Field 
                         name='machineCondition'
                         as='select'
-                        className='form-control' >
+                        className='form-control' 
+                        required>
                             <option>Good</option>
                             <option>OK</option>
                             <option>Rough</option>
@@ -124,14 +145,15 @@ const InspectionForm = () => {
 
                 <FormGroup row>
                     <Label htmlFor='model' md-2>
-                        Your Machine Model Number
+                       Machine Model Number
                     </Label>
                     <Col md='10'>
                         <Field 
                         name='model'
                         as='textarea'
                         rows='1'
-                        className='form-control' />
+                        className='form-control' 
+                        required/>
                     </Col>
                 </FormGroup>
 
@@ -144,7 +166,8 @@ const InspectionForm = () => {
                         name='techName'
                         as='textarea'
                         rows='1'
-                        className='form-control' />
+                        className='form-control' 
+                        required/>
                     </Col>
                 </FormGroup>
 

@@ -1,10 +1,13 @@
+import React from "react";
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import image from '../app/shared/logo512.png';
+
 
 
 
 const ScheduleForm = () => {
-    const handleSubmit = (values, {resetForm}) => {
+    const handleSubmit = (values, { resetForm }) => {
         console.log('form values:', values);
         console.log('in JSON format:', JSON.stringify(values));
         resetForm();
@@ -15,72 +18,105 @@ const ScheduleForm = () => {
             initialValues={{
                 firstName: '',
                 lastName: '',
-                phoneNum: '',
+                phone: '',
+                address: '',
                 machineType: '',
                 issueDescription: '',
                 scheduleTimeToPickUp: '',
                 scheduleTimeToDropOff: '',
                 budget: '',
+                flexible: '',
+                appt: '',
                 addlComments: ''
             }}
             onSubmit={handleSubmit}
-            // validate={validateScheduleForm}
+        // validate={validateScheduleForm}
         >
-            <Form>
-            <h1>Schedule Form</h1>
+            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}}>
+                <h1>Schedule Form</h1>
 
-            <FormGroup row>
+                <FormGroup row>
                     <Label htmlFor='firstName' md='2'>
-                        First Name
+                        Name
                     </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='firstName' 
-                        placeholder='First Name' 
-                        className='form-control' />
-                        {/* <ErrorMessage name='firstName'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
+                    <Col md='6'>
+                        <Field
+                            name='firstName'
+                            placeholder='First Name'
+                            className='form-control'
+                            required />
+                        
+                    </Col>
+
+                </FormGroup>
+                <FormGroup row>
+                    <Col md={{ size: 4, offset: 2 }}>
+                        <Field
+                            name='lastName'
+                            placeholder='Last Name'
+                            className='form-control'
+                            required />
+                        
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='lastName' md='2'>
-                        Last Name
-                    </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='lastName'
-                        placeholder='Last Name'
-                        className='form-control' />
-                        {/* <ErrorMessage name='lastName'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
-                    </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Label htmlFor='phoneNum' md='2'>
+                    <Label htmlFor='phone' md='2'>
                         Phone
                     </Label>
                     <Col md='10'>
-                        <Field 
-                        name='phoneNum'
-                        placeholder='Phone'
-                        className='form-control' />
-                        {/* <ErrorMessage name='phoneNum'>
+                        <Field
+                            name='phone'
+                            type='tel'
+                            placeholder='Phone'
+                            className='form-control'
+                            required />
+                        {/* <ErrorMessage name='phone'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage> */}
                     </Col>
                 </FormGroup>
+
+                <FormGroup row>
+                    <Label htmlFor='address' md='2'>
+                        Address
+                    </Label>
+                    <Col md='3'>
+                        <Field
+                            name='address'
+                            placeholder='address'
+                            type='address'
+                            required
+                             />
+                        {/* <ErrorMessage name='email'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage> */}
+                    </Col>
+                </FormGroup>
+
+                <FormGroup row>
+                    <Col md='7'>
+                        <Field
+                            name='addressCity'
+                            placeholder='City / Town'
+                            type='addressCity'
+                            required
+                             />
+                        {/* <ErrorMessage name='email'>
+                            {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage> */}
+                    </Col>
+                </FormGroup>
+
                 <FormGroup row>
                     <Label htmlFor='email' md='2'>
                         Email
                     </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='email'
-                        placeholder='Email'
-                        type='email'
-                        className='form-control' />
+                    <Col md='4'>
+                        <Field
+                            name='email'
+                            placeholder='Email'
+                            type='email'
+                            className='form-control' />
                         {/* <ErrorMessage name='email'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage> */}
@@ -90,15 +126,16 @@ const ScheduleForm = () => {
 
 
                 <FormGroup row>
-                    <Label htmlFor='machineType' check md={{ size: 4, offset: 2 }}>
-                        
+                    <Label htmlFor='machineType' check md='2'>
+
                         Machine Type (Pick One)
                     </Label>
                     <Col md='4'>
-                        <Field 
-                        name='machineType'
-                        as='select'
-                        className='form-control' >
+                        <Field
+                            name='machineType'
+                            as='select'
+                            className='form-control'
+                            required >
                             <option>Mower</option>
                             <option>Snow Blower</option>
                             <option>Tiller</option>
@@ -111,25 +148,25 @@ const ScheduleForm = () => {
                     <Label htmlFor='issueDescription' md-2>
                         Please describe any issues with the machine here.
                     </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='issueDescription'
-                        as='textarea'
-                        rows='10'
-                        className='form-control' />
+                    <Col md='12'>
+                        <Field
+                            name='issueDescription'
+                            as='textarea'
+                            rows='2'
+                            className='form-control' />
                     </Col>
                 </FormGroup>
 
                 <FormGroup row>
                     <Label htmlFor='budget' check md={{ size: 4, offset: 2 }}>
-                        
+
                         Budget (Pick One)
                     </Label>
                     <Col md='4'>
-                        <Field 
-                        name='budget'
-                        as='select'
-                        className='form-control' >
+                        <Field
+                            name='budget'
+                            as='select'
+                            className='form-control' >
                             <option>Fix it all</option>
                             <option>Make it run good</option>
                             <option>Make it work</option>
@@ -137,130 +174,49 @@ const ScheduleForm = () => {
                         </Field>
                     </Col>
                 </FormGroup>
+                <FormGroup row>
+                    <Label htmlFor='appt' >Make an appointment</Label>
+                    <Col >
+                        <Field type='datetime-local' id='appt' name='appt' />
+                    </Col>
+                </FormGroup>
 
-
-                {/* <FormGroup row>
-                    <Label htmlFor='oilCondition' check md={{ size: 4, offset: 2 }}>
-                        <Field name='oilCondition' type='checkbox' className='form-check-input'
-                        /> {' '}
-                        Oil Condition
-                    </Label>
-                    <Col md='4'>
-                        <Field 
-                        name='oilCondition'
-                        as='select'
-                        className='form-control' >
-                            <option>Good / Clean</option>
-                            <option>OK / Still Transparent</option>
-                            <option>Needs Replaced / Dark</option>
-                            <option>Under Fill Line</option>
+                <FormGroup row>
+                    <Label htmlFor='dropOrPick' >Are you droping off or are we transporting the machine($80)</Label>
+                    <Col>
+                    <Field
+                            name='dropOrPick'
+                            as='select'
+                            className='form-control'
+                            required >
+                            <option>We will drop it off</option>
+                            <option>We need transportation for the machine ($80 within 15 miles)</option>
+                            <option>Machine Donation / Recycling (No pickup Fee)</option>
+                            
                         </Field>
                     </Col>
                 </FormGroup>
 
-                <FormGroup row>
-                    <Label htmlFor='bladeCondition' check md={{ size: 4, offset: 2 }}>
-                        <Field name='bladeCondition' type='checkbox' className='form-check-input'
-                        /> {' '}
-                        Blade(s) Condition
-                    </Label>
-                    <Col md='4'>
-                        <Field 
-                        name='bladeCondition'
-                        as='select'
-                        className='form-control' >
-                            <option>Good</option>
-                            <option>OK</option>
-                            <option>Needs Replaced</option>
-                            <option>Missing / Damaged Spindle</option>
-                        </Field>
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label htmlFor='bladeNum' check md={{ size: 4, offset: 2 }}>
-                        <Field name='bladeNum' type='checkbox' className='form-check-input'
-                        /> {' '}
-                        Number of Blades
-                    </Label>
-                    <Col md='4'>
-                        <Field 
-                        name='bladeNum'
-                        as='select'
-                        className='form-control' >
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>Missing</option>
-                        </Field>
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label htmlFor='machineCondition' check md={{ size: 4, offset: 2 }}>
-                        <Field name='machineCondition' type='checkbox' className='form-check-input'
-                        /> {' '}
-                        General Machine Condition
-                    </Label>
-                    <Col md='4'>
-                        <Field 
-                        name='machineCondition'
-                        as='select'
-                        className='form-control' >
-                            <option>Good</option>
-                            <option>OK</option>
-                            <option>Rough</option>
-                            <option>How does it stay together when it runs?</option>
-                        </Field>
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label htmlFor='model' md-2>
-                        Your Machine Model Number
-                    </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='model'
-                        as='textarea'
-                        rows='1'
-                        className='form-control' />
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label htmlFor='techName' md-2>
-                        Inspection Completed By
-                    </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='techName'
-                        as='textarea'
-                        rows='1'
-                        className='form-control' />
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Label htmlFor='addlComments' md-2>
-                        Any Additional Comments
-                    </Label>
-                    <Col md='10'>
-                        <Field 
-                        name='addlComments'
-                        as='textarea'
-                        rows='6'
-                        className='form-control' />
+                {/* This range input really shouldn't be here but I wanted to learn how to use it. The range / slider doesn't seem to have much support. From what I researched its becuase it is used so little. */}
+                <FormGroup row>   
+                    <Label for='flexible'> Flexibility with Schedule (between not and Very Flexible)</Label>
+                    <Col>
+                        <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Col md={{size: 10, offset: 2}} >
-                        <Button className='btn btn-lg btn-primary' type='submit' color='primary'> Submit Inspection Report</Button>
+                        <Button className='btn btn-lg btn-primary' type='submit' color='primary'  > Submit Scheduling Request </Button>
+                        
                     </Col>
-                </FormGroup> */}
+                </FormGroup>
             </Form>
         </Formik>
     )
 };
+
+<script>
+
+</script>
 
 export default ScheduleForm;

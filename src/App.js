@@ -1,32 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import InspectionForm from './features/InspectionForm';
-import ScheduleForm from './features/ScheduleForm';
-import ContactForm from './features/ContactForm';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import SchedulePage from './pages/SchedulePage';
+import InspectionPage from './pages/InspectionPage';
+import ForSalePage from './pages/ForSalePage'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+      <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='contactPage' element={<ContactPage />} />
+          <Route path='aboutPage' element={<AboutPage />} />
+          <Route path='schedulePage' element={<SchedulePage />} />
+          <Route path='inspectionPage' element={<InspectionPage />} />
+          <Route path='forSalePage' element={<ForSalePage />} />
+        </Routes> 
+        <br />
+        <br />
+        <br />
         
-        <InspectionForm />
-        <ScheduleForm />
-        <ContactForm />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
