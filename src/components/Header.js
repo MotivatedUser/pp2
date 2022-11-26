@@ -12,7 +12,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-      <Navbar dark color='warning' expand='md' >
+      <Navbar dark  expand='md' className='header' >
         <NavbarBrand className='navbar-brand' href='/' >
           <img src={logo} alt='React Logo' className='float-start App-logo' style={{ height:180, width:180 }}/>
           <h1 className='mt-1'>MowerTech React</h1>

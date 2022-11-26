@@ -25,9 +25,11 @@
   color: rgb(94, 24, 24);
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,218,70,0.8365721288515406) 100%);
 }
+
 
 @keyframes App-logo-spin {
   from {
