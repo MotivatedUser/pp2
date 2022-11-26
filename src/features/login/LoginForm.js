@@ -10,6 +10,12 @@ const LoginForm = () => {
 
     const currentLogin = useSelector(selectCurrentLogin);
 
+    const handleSubmit = (values, { resetForm }) => {
+        console.log('form values:', values);
+        console.log('in JSON format:', JSON.stringify(values));
+        // resetForm();
+    }
+
     const dispatch = useDispatch();
 
     const handleLogin = (values) => {
@@ -19,6 +25,7 @@ const LoginForm = () => {
         }
         dispatch(setCurrentLogin(currentLogin));
         setLoginModalOpen(false);
+        
     }
     return (
         <>
