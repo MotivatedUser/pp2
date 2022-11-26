@@ -53,8 +53,9 @@ const AboutPage = () => {
         </div>
 
         <div className="row row-content">
-            <div className="col-sm-9">
+            <div className="col">
                 <h2>Average Repair Costs</h2>
+                
                 <div className="table-responsive">
                     <table className="table table-striped">
                         <thead>
@@ -87,6 +88,7 @@ const AboutPage = () => {
                         </tbody>
                     </table>
                 </div>
+                
             </div>
         </div>
       

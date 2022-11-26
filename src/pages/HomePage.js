@@ -1,6 +1,7 @@
 // import { BugButton } from "../components/BugButton";
 import mowerPile from '../app/assets/mowerPile.jpg';
 import reviews from '../app/assets/reviews.jpg';
+import Lt2000 from '../app/assets/Lt2000.jpg';
 
 const HomePage = () => {
     return (
@@ -9,11 +10,12 @@ const HomePage = () => {
           
           <div className="container">
             <div className="row row-content align-items-center">
-                <div className="col-sm-4 order-sm-first col-md-3">
+                <div className="col-sm-6 order-sm-first col-md-6 border border-danger">
                     <h2 className="text-sm-center">Here to serve our community by keeping our small engines running.</h2>
-                    <p className="ml-3 mr-2" >So many small engine machines don't get to live through thier useful life due to user error and lack of maintance. By properly maintaining your machine you are effectivly reducing waste and lowering your machine costs by extending the useful life. Another benefit would be the enviormental cost, gets lower the longer the machine stays in use.</p>
+                    <p className="ml-3 mr-2 mb-2" >So many small engine machines don't get to live through thier useful life due to user error and lack of maintance. By properly maintaining your machine you are effectivly reducing waste and lowering your machine costs by extending the useful life. Another benefit would be the enviormental cost, gets lower the longer the machine stays in use.</p>
+                    <img className="d-flex mr-3 mb-1 img-fluid" src={Lt2000} alt='Riding Mower' />
                 </div>
-                <div className="col border border-danger">
+                <div className="col border border-danger mt-1">
                     <div className="media">
                         <img className="d-flex mr-3 img-fluid" src={mowerPile} alt='mowerPile' />
                         <div className="media-body allign-self-center">
