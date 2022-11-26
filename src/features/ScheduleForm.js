@@ -83,7 +83,7 @@ const ScheduleForm = () => {
                     <Col md='3'>
                         <Field
                             name='address'
-                            placeholder='address'
+                            placeholder='Address'
                             type='address'
                             required
                              />
