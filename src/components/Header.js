@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reac
 import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
 import '../App.css';
+import LoginForm from '../features/login/LoginForm';
 
 // import { Outlet, Link } from "react-router-dom";
 
@@ -21,6 +22,7 @@ const Header = () => {
           
           <Collapse isOpen={menuOpen} navbar>
             <Nav className='ms-auto' >
+              <LoginForm className='mt-2' />
               <NavItem>
                 <NavLink className='nav-link' to='/'>
                   <i className='fa fa-home fa-lg' /> Home
@@ -43,50 +45,8 @@ const Header = () => {
               </NavItem>
             </Nav>
           </Collapse>
-
       </Navbar>
     )
-    
-    // (
-    //   <>
-    //     <nav > 
-    //       <div col='6'>
-    //       <ul >
-    //         <li>
-    //           <Link to="/">Home</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/aboutPage">About Us</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/contactPage">Contact Us</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/schedulePage">Schedule Now</Link>
-    //         </li>
-    //         <li>
-    //           <Link to="/inspectionPage">Techs Only</Link>
-    //         </li>
-            
-    //       </ul>
-    //       </div>
-    //       <div className='App-logo' style={{ backgroundImage:`url(${logo})`, backgroundSize:'contain', height:180, width:180 }}>
-    //         Fake Company Name
-    //         10000 MowerTech Dr.
-    //         Thatonetown, WA 99999
-    //         (555) 123-4567
-    //         </div>
-    //     </nav>
+};
 
-    //   <Outlet />
-        
-        
-    //     {/* <div>
-    //       <h1>This is where the header components will show up</h1>
-    //       <img src={logo} className="App-logo" alt="logo" height="200" width='200' />
-    //     </div> */}
-    //   </>
-    // )
-  };
-  
-  export default Header;
+export default Header;
