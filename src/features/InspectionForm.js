@@ -26,7 +26,7 @@ const InspectionForm = () => {
             onSubmit={handleSubmit}
             // validate={validateInspectionForm}
         >
-            <Form>
+            <Form className='mx-auto'>
             <h1>Inspection Form</h1>
 
                 <FormGroup row>

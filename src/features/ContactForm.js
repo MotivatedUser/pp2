@@ -25,7 +25,7 @@ const ContactForm = () => {
             onSubmit={handleSubmit}
         // validate={validateContactForm}
         >
-            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}}>
+            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
                 <h1>Contact Form</h1>
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>

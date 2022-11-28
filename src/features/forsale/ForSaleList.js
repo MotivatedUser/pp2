@@ -25,7 +25,7 @@ const ForSaleList = ({ forSaleId }) => {
     }
          
     return (
-        <Col md='5' className='m-1'>
+        <Col md='5' className='mx-auto'>
             <h4>These machines sell fast, there are no machines for sale at this time. Click button below to List one of your own.</h4>
             <ForSaleForm forSale={forSale} />
         </Col>

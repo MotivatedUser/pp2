@@ -1,7 +1,7 @@
 const AboutPage = () => {
     return (
       <>
-        <div  className="row row-content">
+        <div  className="row row-content mx-auto">
             <div className="col-sm-6">
                 <h3>Our Mission</h3>
                 <p>Our mission is to positivily impact our community by offering our services in a way that provides true value, postivitly impacting everything it touches. By offering things like used parts we are doing our part to make the world a cleaner and more sustainable place.</p>
@@ -52,7 +52,7 @@ const AboutPage = () => {
             </div>
         </div>
 
-        <div className="row row-content">
+        <div className="row row-content mx-auto">
             <div className="col">
                 <h2>Average Repair Costs</h2>
                 

@@ -32,7 +32,7 @@ const ScheduleForm = () => {
             onSubmit={handleSubmit}
         // validate={validateScheduleForm}
         >
-            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}}>
+            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
                 <h1>Schedule Form</h1>
 
                 <FormGroup row>

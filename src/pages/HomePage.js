@@ -13,11 +13,11 @@ const HomePage = () => {
                 <div className="col-sm-6 order-sm-first col-md-6 border border-danger">
                     <h2 className="text-sm-center">Here to serve our community by keeping our small engines running.</h2>
                     <p className="ml-3 mr-2 mb-2" >So many small engine machines don't get to live through thier useful life due to user error and lack of maintance. By properly maintaining your machine you are effectivly reducing waste and lowering your machine costs by extending the useful life. Another benefit would be the enviormental cost, gets lower the longer the machine stays in use.</p>
-                    <img className="d-flex mr-3 mb-1 img-fluid" src={Lt2000} alt='Riding Mower' />
+                    <img className="d-flex mr-3 mb-1 img-fluid mx-auto" src={Lt2000} alt='Riding Mower' />
                 </div>
                 <div className="col border border-danger mt-1">
                     <div className="media">
-                        <img className="d-flex mr-3 img-fluid" src={mowerPile} alt='mowerPile' />
+                        <img className="d-flex mr-3 img-fluid mx-auto " src={mowerPile} alt='mowerPile' />
                         <div className="media-body allign-self-center">
                             <h3>Why is important to care for your machines?</h3>
                             <p className="d-none d-sm-block mr-2">Have you ever bought a small engine machine and when it didn't start blame the quality of the machine? Well you could be right, however, most of the time the machines don't start due to improper maintance. The spark plug always seems the first to get changed, brought on by the old 2 strokes that use to foul plugs. Depending on what the machine does when trying to start will usually provide the solution or atleast the path to a proper diaganosis. It can be easy to order parts and put them on... but finding what part you need is key.</p>
@@ -41,7 +41,7 @@ const HomePage = () => {
                   
                 <div className="col">
                     <div className="media">
-                        <img className="d-flex mr-2 img-thumbnail" src={reviews} alt="review thumbnail" />
+                        <img className="d-flex mr-2 img-thumbnail mx-auto" src={reviews} alt="review thumbnail" />
                         <div className="media-body align-self-center mr-2">
                             <h3>Customer Reviews</h3>
                             <p className="">"The Mobile Mechanic came out on time and saved us from buying another mower, turns out it was a blown head gasket!" - Customer 1</p>

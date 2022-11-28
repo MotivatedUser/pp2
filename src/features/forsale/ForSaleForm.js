@@ -33,8 +33,8 @@ const ForSaleForm = ({forSaleId}) => {
                     For Sale Form
                 </ModalHeader>
                 <ModalBody>
-                    <Formik initialValues={{id: '', name: '', cut: '', ready: '', description: ''}} onSubmit={handleSubmit}>
-                        <Form>
+                    <Formik initialValues={{id: '', name: '', cut: '', ready: '', description: ''}} onSubmit={handleSubmit} >
+                        <Form className='mx-auto'>
                             <FormGroup>
                                 <Label htmlFor='id' >Unique ID</Label>
                                 
