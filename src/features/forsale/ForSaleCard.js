@@ -2,8 +2,8 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 
-const ForSaleCard = ({forSale}) => {
-    const { id, image, name } = forSale;
+const ForSaleCard = ({item}) => {
+    const { id, image, name } = item;
     return (
         <Link to={`${id}`} >
             <Card>
