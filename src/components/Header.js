@@ -19,7 +19,12 @@ const Header = () => {
         </NavbarBrand>
 
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-          <h1>MowerTech Reactstyle</h1>
+          
+          <h1>MowerTech Reactstyle</h1>          
+          <p>4321 Fixit Dr.<br/>YourTown, WA 22233</p>
+          
+          
+          
           <Collapse isOpen={menuOpen} navbar>
             <Nav className='ms-auto' >
               <LoginForm className='mt-2' />
@@ -40,8 +45,11 @@ const Header = () => {
                   <i className='fa fa-recycle fa-lg' /> Machines For Sale
                 </NavLink>
                 <NavLink className='nav-link' to='/inspectionPage'>
-                  <i className='fa fa-user fa-lg' /> Techs Only
+                  <i className='fa fa-user fa-lg' />  Techs Only
                 </NavLink>
+                
+                  
+                
               </NavItem>
             </Nav>
           </Collapse>

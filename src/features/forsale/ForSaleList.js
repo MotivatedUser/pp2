@@ -14,14 +14,17 @@ const ForSaleList = ({ forSaleId }) => {
     if (forSale && forSale.length > 0) {
         return (
             <Col md='5' className='m-1'>
-                <h4>Items for Sale</h4>
+                <h4>Machines for Sale</h4>
                 {forSale.map((item) => {
-                    return <ForSaleCard key={item.id} item={item} />;
+                    return 
+                    <ForSaleCard key={item.id} item={item} />;
                 })}
                 <ForSaleForm forSale={forSale} />
                 
             </Col>
         );
+
+        
     }
          
     return (

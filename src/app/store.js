@@ -7,7 +7,7 @@ import { loginReducer } from '../features/login/loginSlice';
 export const store = configureStore({
   reducer: {
     forSale: forSaleReducer,
-    login: loginReducer
+    login: loginReducer,
   },
    
 });

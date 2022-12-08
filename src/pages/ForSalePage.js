@@ -5,7 +5,7 @@ const ForSalePage = () => {
 
     return (
         <Container>
-            <h1>Items for Sale</h1>
+            <h1>Machines for Sale</h1>
             <ForSaleList />
         </Container>
     );

@@ -45,3 +45,9 @@
   background-color: orange;
   color: white;
 }
+
+.login-btn {
+  position: absolute;
+  left: 0;
+  margin-left: 50%;
+}

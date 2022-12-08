@@ -20,6 +20,7 @@ const InspectionForm = () => {
                 bladeNum: '',
                 machineCondition: '',
                 model: '',
+                engineModel: '',
                 techName: '',
                 addlComments: ''
             }}
@@ -150,6 +151,20 @@ const InspectionForm = () => {
                     <Col md='10'>
                         <Field 
                         name='model'
+                        as='textarea'
+                        rows='1'
+                        className='form-control' 
+                        required/>
+                    </Col>
+                </FormGroup>
+
+                <FormGroup row>
+                    <Label htmlFor='engineModel' md-2>
+                       Engine Model Number
+                    </Label>
+                    <Col md='10'>
+                        <Field 
+                        name='engineModel'
                         as='textarea'
                         rows='1'
                         className='form-control' 

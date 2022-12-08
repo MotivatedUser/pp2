@@ -29,13 +29,14 @@ const LoginForm = () => {
     }
     return (
         <>
-            <span className='navbar-text ml-auto'>
+            <span className='navbar-text ml-auto login-btn'>
                 <Button
+                    className='btn btn-sm'
                     outline
                     onClick={() => setLoginModalOpen(true)}
-                    style={{ color: 'red', border: '1px solid white' }}
+                    style={{ color: 'yellow', border: '1px solid white' }}
                 >
-                    <i className='fa fa-sign-in fa-lg' /> Login Here
+                    <i className='fa fa-sign-in fa-lg' /> Login
                 </Button>
             </span>
             <Modal isOpen={loginModalOpen} >

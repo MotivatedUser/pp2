@@ -189,8 +189,8 @@ const ScheduleForm = () => {
                             as='select'
                             className='form-control'
                             required >
-                            <option>We will drop it off</option>
-                            <option>We need transportation for the machine ($80 within 15 miles)</option>
+                            <option>We will drop it off at the shop</option>
+                            <option>We need transportation for the machine both ways ($80 within 15 miles)</option>
                             <option>Machine Donation / Recycling (No pickup Fee)</option>
                             
                         </Field>
@@ -205,8 +205,9 @@ const ScheduleForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Col md={{size: 10, offset: 2}} >
-                        <Button className='btn btn-lg btn-primary' type='submit' color='primary'  > Submit Scheduling Request </Button>
+                    <Col md={{size: 10, offset: 1}} >
+                        <Button className='btn btn-lg btn-primary submit-scheduling-btn' type='submit' color='primary'  > Submit Scheduling Request </Button>
+                        <p>If you chose Transportation for your machine the Transportation Fee will be due upon scheduling.</p>
                         
                     </Col>
                 </FormGroup>

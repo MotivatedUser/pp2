@@ -81,7 +81,7 @@ const ForSaleForm = ({forSaleId}) => {
                                 <Field name='imageUpload' accept="image/*"  type='file' />
                             </FormGroup>
                             <FormGroup>
-                                <Label htmlFor='description'>Description of the Machine (Size, Condition, Aprox Age and anyother information you think might help it sell.</Label>
+                                <Label htmlFor='description'>Description of the Machine (Size, Condition, Aprox Age and any other information you think might help it sell.</Label>
                                 <Field
                                     name='description'
                                     as='textarea'
