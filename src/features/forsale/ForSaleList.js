@@ -21,7 +21,7 @@ const ForSaleList = () => {
             <Error errMsg={errMsg} /> 
         ): (forSale && forSale.length > 0) ? (
             <Col md='4' className='m-1'>
-                <h4>Machines for Sale</h4>
+                
                 {forSale.map((item) => {
                     return (
                         <Col md='4' className='m-4' key={item.id}>
