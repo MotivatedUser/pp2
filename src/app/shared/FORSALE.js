@@ -1,7 +1,8 @@
-import cubCadet from '../assets/cubCadet.jpg'
+import cubCadet from '../assets/cubCadet.jpg';
 import Lt2000 from '../assets/Lt2000.jpg';
 import Poulan from '../assets/Poulan.jpg';
-import Snapper from '../assets/Snapper.jpg'
+import Snapper from '../assets/Snapper.jpg';
+import kungfuMowing from '../assets/kungfuMowing.jpg';
 
 export const FORSALE = [
     {
@@ -35,5 +36,13 @@ export const FORSALE = [
         cut: '22',
         ready: 'yes',
         description: 'Perfect for the back yard'
+    },
+    {
+        id: 4, 
+        name: 'This could be your machine Listed Here!',
+        image: kungfuMowing,
+        cut: '42',
+        ready: 'yes',
+        description: 'Save time by listing here will allow you to seperate your mow time and KungFu training!'
     }
 ];

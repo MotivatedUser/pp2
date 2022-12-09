@@ -24,6 +24,7 @@ const ForSaleDetailsPage = () => {
         content = (
             <>
                 <ForSaleDetails item={item} />
+                <ForSaleList itemId={itemId} />
             </>
         )
     } 
@@ -33,8 +34,7 @@ const ForSaleDetailsPage = () => {
             detail={true} />}
             <Row>{content}</Row>
         </Container>
-    )
-
-}
+    );
+};
 
 export default ForSaleDetailsPage;
