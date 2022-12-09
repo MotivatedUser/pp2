@@ -58,3 +58,10 @@
   text-shadow: 2px 2px 5px black;
 
 }
+.card-header-text:hover {
+  font-weight: 'bolder';
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px 5px yellow;
+
+}
