@@ -31,7 +31,7 @@ const InspectionForm = () => {
             <h1>Inspection Form</h1>
 
                 <FormGroup row>
-                    <Label htmlFor='clientNumber' md-2>
+                    <Label htmlFor='clientNumber' md='2'>
                         Client Number
                     </Label>
                     <Col md='10'>
@@ -145,7 +145,7 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='model' md-2>
+                    <Label htmlFor='model' md='2'>
                        Machine Model Number
                     </Label>
                     <Col md='10'>
@@ -159,7 +159,7 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='engineModel' md-2>
+                    <Label htmlFor='engineModel' md='2'>
                        Engine Model Number
                     </Label>
                     <Col md='10'>
@@ -173,7 +173,7 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='techName' md-2>
+                    <Label htmlFor='techName' md='2'>
                         Inspection Completed By
                     </Label>
                     <Col md='10'>
@@ -187,7 +187,7 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='addlComments' md-2>
+                    <Label htmlFor='addlComments' md='2'>
                         Any Additional Comments
                     </Label>
                     <Col md='10'>

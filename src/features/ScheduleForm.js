@@ -145,7 +145,7 @@ const ScheduleForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='issueDescription' md-2>
+                    <Label htmlFor='issueDescription' md='2'>
                         Please describe any issues with the machine here.
                     </Label>
                     <Col md='12'>

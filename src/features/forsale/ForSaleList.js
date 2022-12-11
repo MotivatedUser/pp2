@@ -8,7 +8,7 @@ import Error from '../../components/Error';
 
 
 const ForSaleList = () => {
-    // useSelector needs to be updated to selectAllForSale ... last try errored out.
+    
     const forSale = useSelector(selectAllForSale);
     console.log('forsale:', forSale);
 
@@ -24,7 +24,8 @@ const ForSaleList = () => {
                 
                 {forSale.map((item) => {
                     return (
-                        <Col md='4' className='m-4' key={item.id}>
+                        
+                        <Col md='4' className='col-sm-6 col-md-4 col-xl-3 m-4' key={item.id}>
                             <ForSaleCard item={item} />
                             
                         </Col>
