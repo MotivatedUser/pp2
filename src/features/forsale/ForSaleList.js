@@ -26,7 +26,7 @@ const ForSaleList = () => {
                     return (
                         
                         <Col md='4' className='col-sm-6 col-md-4 col-xl-3 m-4' key={item.id}>
-                            <ForSaleCard item={item} />
+                            <ForSaleCard item={item} key={item.id} />
                             
                         </Col>
                     );
