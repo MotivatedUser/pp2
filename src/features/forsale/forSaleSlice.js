@@ -32,14 +32,12 @@ export const selectForSaleById = (forSaleId) => (state) => {
     );
 };
 
-// export const selectRandomForSale = () => {
-//     return FORSALE[Math.floor(FORSALE.length * Math.random())];
-// };
-
 export const selectAllForSale = (state) => {
     return state.forSale.forSaleArray;
 };
-
+// export const selectRandomForSale = () => {
+//     return FORSALE[Math.floor(FORSALE.length * Math.random())];
+// };
 
 
 // export const selectCampsiteById = (id) => (state) => {

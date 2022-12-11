@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
+import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
 import '../App.css';
 import LoginForm from '../features/login/LoginForm';
+
 
 // import { Outlet, Link } from "react-router-dom";
 
@@ -19,10 +20,10 @@ const Header = () => {
         </NavbarBrand>
 
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-          
-          <h1>MowerTech Reactstyle</h1>          
-          <p>4321 Fixit Dr.<br/>YourTown, WA 22233</p>
-          
+          <Col>
+            <h1>MowerTech Reactstyle</h1>          
+            <p>4321 Fixit Dr.<br/>YourTown, WA 22233</p>
+          </Col>
           
           
           <Collapse isOpen={menuOpen} navbar>
