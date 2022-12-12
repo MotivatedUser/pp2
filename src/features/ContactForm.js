@@ -26,7 +26,7 @@ const ContactForm = () => {
         // validate={validateContactForm}
         >
             <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
-                <h1>Contact Form</h1>
+                <h1 className='largeTitleFontStyle' >Contact Form</h1>
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>
                         First Name

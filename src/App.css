@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-logo {
@@ -16,16 +17,16 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   font-size: calc(10px + 2vmin);
   color: rgb(94, 24, 24);
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: rgb(63,94,251);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,218,70,0.8365721288515406) 100%);
 }
@@ -52,16 +53,63 @@
   margin-left: 50%;
 }
 .card-header-text {
-  font-weight: 'bolder';
+  font-weight: 'bold';
   font-size: 2rem;
   color: white;
   text-shadow: 2px 2px 5px black;
+  
 
 }
 .card-header-text:hover {
   font-weight: 'bolder';
-  font-size: 2rem;
-  color: black;
-  text-shadow: 2px 2px 5px yellow;
+  font-size: 2.25rem;
+  color: rgb(238, 13, 13);
+  text-shadow: 1px 1px 5px white;
 
+}
+
+.subTitleFontStyle {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.titleFontStyle {
+  font-weight: 900;
+  font-size: 2.25rem;
+}
+
+.largeTitleFontStyle {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.pFontStyle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.forSaleListGrid {
+  
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  
+  margin: 10px;
+  padding: 10px;
+  
+}
+.forSaleCard {
+  width: 22rem;
+  
+}
+.flex1 {
+justify-content: flex-start;
+
+}
+
+.flex-items {
+  width: 90px;
+  height: 60px;
+  margin: 10px;
 }

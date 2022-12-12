@@ -8,34 +8,38 @@ export const FORSALE = [
     {
         id: 0,
         name: 'Craftsman LT2000',
+        seller: 'Harry Peasron',
         image: Lt2000,
         cut: '42',
         ready: 'yes',
-        description: 'Good mower cuts grass and stuff'
+        description: 'Good mower cuts grass and stuff.'
     },
     {
         id: 1,
         name: 'Cub Cadet',
+        seller: 'Joe Johns',
         image: cubCadet,
         cut: '46',
         ready: 'no',
-        description: 'Needs new engine est $500' 
+        description: 'Needs new engine est $500.' 
     },
     {
         id: 2,
         name: 'Poulan',
+        seller: 'MowerTech',
         image: Poulan,
         cut: '38',
         ready: 'yes',
-        description: 'Great for your cabin'
+        description: 'Great for your cabin.'
     },
     {
         id: 3,
         name: 'Snapper',
+        seller: 'MowerTech',
         image: Snapper,
         cut: '22',
         ready: 'yes',
-        description: 'Perfect for the back yard'
+        description: 'Perfect for the back yard.'
     },
     {
         id: 4, 

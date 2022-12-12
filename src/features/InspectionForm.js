@@ -28,7 +28,7 @@ const InspectionForm = () => {
             // validate={validateInspectionForm}
         >
             <Form className='mx-auto'>
-            <h1>Inspection Form</h1>
+            <h1 className='largeTitleFontStyle'>Inspection Form</h1>
 
                 <FormGroup row>
                     <Label htmlFor='clientNumber' md='2'>

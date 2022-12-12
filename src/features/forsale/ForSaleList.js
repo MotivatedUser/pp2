@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import ForSaleCard from './ForSaleCard';
-import { Col } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import { selectAllForSale } from './forSaleSlice';
 import ForSaleForm from './ForSaleForm';
 import Loading from '../../components/Loading';
@@ -20,18 +20,18 @@ const ForSaleList = () => {
         ): errMsg ? (
             <Error errMsg={errMsg} /> 
         ): (forSale && forSale.length > 0) ? (
-            <Col md='4' className='m-1'>
+            <Row className='flex1'>
                 
                 {forSale.map((item) => {
                     return (
                         
-                        <Col md='4' className='col-sm-6 col-md-4 col-xl-3 m-4' key={item.id}>
-                            <ForSaleCard item={item} key={item.id} />
+                        <Col className='mx-auto' key={item.id}>
+                            <ForSaleCard className='flex-items' item={item} key={item.id} />
                             
                         </Col>
                     );
                 })}       
-            </Col>
+            </Row>
         ): (
             <Col md='5' className='mx-auto'>
                 <h4>These machines sell fast, there are no machines for sale at this time. Click button below to List one of your own.</h4>

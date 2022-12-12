@@ -33,7 +33,7 @@ const ScheduleForm = () => {
         // validate={validateScheduleForm}
         >
             <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
-                <h1>Schedule Form</h1>
+                <h1 className='largeTitleFontStyle'>Schedule Form</h1>
 
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>

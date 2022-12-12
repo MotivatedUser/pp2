@@ -16,7 +16,7 @@ const ForSalePage = () => {
 
     return (
         <Container>
-            <h1>Machines for Sale</h1>
+            <h1 className='largeTitleFontStyle' >Machines for Sale</h1>
             <Div>
             <ForSaleList />
             </Div>

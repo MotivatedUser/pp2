@@ -3,7 +3,7 @@ const AboutPage = () => {
       <>
         <div  className="row row-content mx-auto">
             <div className="col-sm-6">
-                <h3>Our Mission</h3>
+                <h3 className='subTitleFontStyle' >Our Mission</h3>
                 <p>Our mission is to positivily impact our community by offering our services in a way that provides true value, postivitly impacting everything it touches. By offering things like used parts we are doing our part to make the world a cleaner and more sustainable place.</p>
             </div>
             <div className="col-sm-6">
@@ -28,7 +28,7 @@ const AboutPage = () => {
                     <blockquote className="blockquote card-body">
                         <p className="mb-0">"Do it once and do it right and do it quickly"</p>
                         <br />
-                        <footer className="blockquote-footer">Lee Child,
+                        <footer className="blockquote-footer subTitleFontStyle">Lee Child,
                             <cite title="Source Title">Killing Floor</cite>
                         </footer>
                     </blockquote>
@@ -38,23 +38,23 @@ const AboutPage = () => {
 
         <div className="row row-content">
             <div className="col col-12">
-                <h3><strong>Meet our Employee's</strong></h3>
-                <h4>Rocky React - <small>4 Stroke and Electrical Specialists</small></h4>
-                <p className="d-none d-sm-block">John boasts certifications from Briggs & Stratton along with Kohler and Honda. He has been fixing 4 strokes for 10 years.</p>
-                <h4>Larry Larrie - <small>Carburetor and 2 Stroke Specialist</small></h4>
+                <h3 className='subTitleFontStyle' ><strong>Meet our Employee's</strong></h3>
+                <h4 className='subTitleFontStyle'>Rocky React - <small>4 Stroke and Electrical Specialists</small></h4>
+                <p className="d-none d-sm-block">Rocky boasts certifications from Briggs & Stratton along with Kohler and Honda. He has been fixing 4 strokes for 10 years.</p>
+                <h4 className='subTitleFontStyle'>Larry Larrie - <small>Carburetor and 2 Stroke Specialist</small></h4>
                 <p className="d-none d-sm-block">Larry enjoys a good challenge and this is why he is the resident expert on carburetors. He can rebuild anything from a simple carb up to a four barrel carb that forms an air plenum as seen in Goldwings.</p>
-                <h4>Jesse James - <small>Our own Customer Service Expert and parts Manager</small></h4>
+                <h4 className='subTitleFontStyle'>Jesse James - <small>Our own Customer Service Expert and parts Manager</small></h4>
                 <p className="d-none d-sm-block">Need to call or have someone help you track down a part or even make a special order?... Jesse is your gal! She plays a major role in our day to day operations.</p>
-                <h3><strong>Meet the Owner</strong></h3>
+                <h3 className='subTitleFontStyle'><strong>Meet the Owner</strong></h3>
                 
-                <h4>John Cena - <small> Owner & Operator</small></h4>
+                <h4 className='subTitleFontStyle'>John Cena - <small> Owner & Operator</small></h4>
                 <p className="d-none d-sm-block">John went to get mower serviced one day and was told it would take a month. John decided to open a Small Engine Repair shop becuase he knew he could get jobs completed more effeciently. John now boasts an average of 3 day turn around time thanks to a good parts inventory system and using technoligy to his advantage.</p>
             </div>
         </div>
 
         <div className="row row-content mx-auto">
             <div className="col">
-                <h2>Average Repair Costs</h2>
+                <h2 className='subTitleFontStyle'>Average Repair Costs</h2>
                 
                 <div className="table-responsive">
                     <table className="table table-striped">
