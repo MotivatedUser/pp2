@@ -10,7 +10,7 @@ import ForSalePage from './pages/ForSalePage'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ForSaleDetails from './features/forsale/ForSaleDetails';
-import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
+// import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
 
 function App() {
   return (
@@ -23,7 +23,11 @@ function App() {
           <Route path='schedulePage' element={<SchedulePage />} />
           <Route path='inspectionPage' element={<InspectionPage />} />
           <Route path='forSalePage' element={<ForSalePage />} />
-          <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} />
+
+          {/* <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} /> */}
+
+          <Route path='forSaleDetails' element={<ForSaleDetails/>} />
+          
         </Routes> 
         <br />
         <br />

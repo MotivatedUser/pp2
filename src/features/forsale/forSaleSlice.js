@@ -26,16 +26,10 @@ export const forSaleReducer = forSaleSlice.reducer;
 
 export const { newItem } = forSaleSlice.actions;
 
-// export const selectForSaleById = (id) =>(state)=>{
-//     return(
-//      state.forSale.forSaleArray.find(i => i.id === parseInt(id))
-//     )
-//  };
-
-export const selectForSaleById = (id) => (state) => {
-    return (
-    state.forSale.forSaleArray.find(item => item.id === parseInt(id))
-    )
+export const selectForSaleById = (forSaleId) => (state) => {
+    return state.forSale.forSaleArray.find(
+        (item) => item.forSaleId === parseInt(forSaleId)
+    );
 };
 
 export const selectAllForSale = (state) => {
