@@ -2,7 +2,7 @@ import {Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
 const ForSaleDetails = ({item}) => {
     const { image, name, cut, ready, description } = item;
-
+console.log(item)
     return (
         <Col md='5' className='m-1'>
             <Card>
