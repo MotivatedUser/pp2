@@ -4,7 +4,7 @@ const ForSaleDetails = ({item}) => {
     const { image, name, seller, cut, ready, description } = item;
 
     return (
-        <Col md='5' className='m-1'>
+        <Col className='col-md-6 col-lg-4 forSaleCardCol'>
             <Card>
                 <CardImg top src={image} alt={name} />
                 <CardBody>
