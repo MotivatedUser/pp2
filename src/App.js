@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -9,8 +8,7 @@ import InspectionPage from './pages/InspectionPage';
 import ForSalePage from './pages/ForSalePage'
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ForSaleDetails from './features/forsale/ForSaleDetails';
-// import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
+import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
 
 function App() {
   return (
@@ -23,19 +21,11 @@ function App() {
           <Route path='schedulePage' element={<SchedulePage />} />
           <Route path='inspectionPage' element={<InspectionPage />} />
           <Route path='forSalePage' element={<ForSalePage />} />
-
-          {/* <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} /> */}
-
-          <Route path='forSaleDetails' element={<ForSaleDetails/>} />
-          
-        </Routes> 
-        <br />
-        <br />
-        <br />
-        
+            <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} />
+        </Routes>          
       <Footer />
     </div>
-  );
-};
+  )
+}
 
 export default App;

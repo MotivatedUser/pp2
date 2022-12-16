@@ -26,10 +26,10 @@ export const forSaleReducer = forSaleSlice.reducer;
 
 export const { newItem } = forSaleSlice.actions;
 
-export const selectForSaleById = (forSaleId) => (state) => {
-    return state.forSale.forSaleArray.find(
-        (item) => item.forSaleId === parseInt(forSaleId)
-    );
+export const selectForSaleById = (id) => (state) => {
+    return (
+        state.forSale.forSaleArray.find(item => item.id === parseInt(id))
+    )
 };
 
 export const selectAllForSale = (state) => {
@@ -40,7 +40,3 @@ export const selectAllForSale = (state) => {
 // };
 
 
-// export const selectCampsiteById = (id) => (state) => {
-//     return state.forsale.forsaleArray.find(
-//         (item) => forsale.id === parseInt(id)
-//     );

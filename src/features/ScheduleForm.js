@@ -1,10 +1,6 @@
 import React from "react";
 import { Button, Label, Col, FormGroup } from "reactstrap";
-import { Formik, Field, Form, ErrorMessage } from "formik";
-import image from '../app/shared/logo512.png';
-
-
-
+import { Formik, Field, Form } from "formik";
 
 const ScheduleForm = () => {
     const handleSubmit = (values, { resetForm }) => {
@@ -32,25 +28,24 @@ const ScheduleForm = () => {
             onSubmit={handleSubmit}
         // validate={validateScheduleForm}
         >
-            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
-                <h1>Schedule Form</h1>
+            <Form className='formControl' >
+                <h1 className='largeTitleFontStyle'>Schedule Form</h1>
 
                 <FormGroup row>
-                    <Label htmlFor='firstName' md='2'>
+                    <Label htmlFor='firstName' md='4'>
                         Name
                     </Label>
-                    <Col md='6'>
+                    <Col md='3'>
                         <Field
                             name='firstName'
                             placeholder='First Name'
                             className='form-control'
                             required />
-                        
                     </Col>
 
                 </FormGroup>
                 <FormGroup row>
-                    <Col md={{ size: 4, offset: 2 }}>
+                    <Col md={{ size: 3, offset: 4 }}>
                         <Field
                             name='lastName'
                             placeholder='Last Name'
@@ -60,77 +55,59 @@ const ScheduleForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='phone' md='2'>
+                    <Label htmlFor='phone' md='4'>
                         Phone
                     </Label>
-                    <Col md='10'>
+                    <Col md='2'>
                         <Field
                             name='phone'
                             type='tel'
                             placeholder='Phone'
                             className='form-control'
                             required />
-                        {/* <ErrorMessage name='phone'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
                     </Col>
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='address' md='2'>
+                    <Label htmlFor='address' md='4'>
                         Address
                     </Label>
-                    <Col md='3'>
+                    <Col md='1'>
                         <Field
                             name='address'
                             placeholder='Address'
                             type='address'
                             required
                              />
-                        {/* <ErrorMessage name='email'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
-                    </Col>
-                </FormGroup>
-
-                <FormGroup row>
-                    <Col md='7'>
-                        <Field
+                            <Field
                             name='addressCity'
                             placeholder='City / Town'
                             type='addressCity'
                             required
-                             />
-                        {/* <ErrorMessage name='email'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
+                             /> 
                     </Col>
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='email' md='2'>
+                    <Label htmlFor='email' md='4'>
                         Email
                     </Label>
-                    <Col md='4'>
+                    <Col md='3'>
                         <Field
                             name='email'
                             placeholder='Email'
                             type='email'
-                            className='form-control' />
-                        {/* <ErrorMessage name='email'>
-                            {(msg) => <p className='text-danger'>{msg}</p>}
-                        </ErrorMessage> */}
+                            className='form-control'
+                            required />
                     </Col>
                 </FormGroup>
 
-
-
                 <FormGroup row>
-                    <Label htmlFor='machineType' check md='2'>
+                    <Label htmlFor='machineType' check md='4'>
 
                         Machine Type (Pick One)
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field
                             name='machineType'
                             as='select'
@@ -145,10 +122,10 @@ const ScheduleForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='issueDescription' md='2'>
+                    <Label htmlFor='issueDescription' md='4'>
                         Please describe any issues with the machine here.
                     </Label>
-                    <Col md='12'>
+                    <Col md='6'>
                         <Field
                             name='issueDescription'
                             as='textarea'
@@ -158,11 +135,11 @@ const ScheduleForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='budget' check md={{ size: 4, offset: 2 }}>
+                    <Label htmlFor='budget' check md='4'>
 
                         Budget (Pick One)
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field
                             name='budget'
                             as='select'
@@ -174,17 +151,19 @@ const ScheduleForm = () => {
                         </Field>
                     </Col>
                 </FormGroup>
+
                 <FormGroup row>
-                    <Label htmlFor='appt' >Make an appointment</Label>
-                    <Col >
+                    <Label htmlFor='appt'  md='4'>Make an appointment</Label>
+                    <Col className='col-1'>
                         <Field type='datetime-local' id='appt' name='appt' />
                     </Col>
+
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='dropOrPick' >Are you droping off or are we transporting the machine($80)</Label>
-                    <Col>
-                    <Field
+                    <Label htmlFor='dropOrPick' md='4'>Are you droping off or are we transporting the machine($80)</Label>
+                    <Col md='6'>
+                        <Field
                             name='dropOrPick'
                             as='select'
                             className='form-control'
@@ -199,16 +178,17 @@ const ScheduleForm = () => {
 
                 {/* This range input really shouldn't be here but I wanted to learn how to use it. The range / slider doesn't seem to have much support. From what I researched its becuase it is used so little. */}
                 <FormGroup row>   
-                    <Label for='flexible'> Flexibility with Schedule (between not and Very Flexible)</Label>
-                    <Col>
-                        <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' />
+                    <Label for='flexible' md='4'> Flexibility with Schedule (between not and Very Flexible)</Label>
+                    <Col md='5' className='slideInput' >
+                        Not Flexible
+                            <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' />
+                        Flexible
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Col md={{size: 10, offset: 1}} >
-                        <Button className='btn btn-lg btn-primary submit-scheduling-btn' type='submit' color='primary'  > Submit Scheduling Request </Button>
-                        <p>If you chose Transportation for your machine the Transportation Fee will be due upon scheduling.</p>
-                        
+                        <Button className='btn btn-lg btn-primary submit-scheduling-btn' type='submit' color='primary'> Submit Scheduling Request </Button>
+                        <p className='disclaimer' >If you picked Transportation for your machine, the Transportation Fee will be due scheduling confirmation.<br/> Does not apply to machine donations.</p>
                     </Col>
                 </FormGroup>
             </Form>
@@ -216,8 +196,5 @@ const ScheduleForm = () => {
     )
 };
 
-<script>
-
-</script>
 
 export default ScheduleForm;
