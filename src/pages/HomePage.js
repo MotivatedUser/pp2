@@ -16,7 +16,7 @@ const HomePage = () => {
                             <h2 className="subTitleFontStyle">Here to serve our community by keeping our small engines running.</h2>
                             <p className="pFontStyle" >So many small engine machines don't get to live through thier useful life, due to user error and lack of maintance. You can change that by properly maintaining your machine. By doing so you are effectivly reducing waste and lowering your machine costs by extending the useful life. Another benefit would be the reduced waste and manafacturing impact. By lowering enviormental cost we all win. And the cost gets lower the longer the machine stays in use.</p>
                         </div>
-                        <hr/>
+                        
                         <img className="d-flex mr-3 mb-3 img-fluid mx-auto rounded" src={Lt2000} alt='Riding Mower' />
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const HomePage = () => {
             </div>
         
     
-            <div className="row row-content align-items-center border border-primary">
+            <div className="row row-content align-items-center">
                 <div className="col-sm-4 col-md-3">
                     <h2 className='subTitleFontStyle textColorAnimation' >Why pick the Mobile Mechanic?</h2>
                 </div> 

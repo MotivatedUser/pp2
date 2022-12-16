@@ -28,7 +28,7 @@ export const { newItem } = forSaleSlice.actions;
 
 export const selectForSaleById = (id) => (state) => {
     return (
-    state.forSale.forSaleArray.find(item => item.id === parseInt(id))
+        state.forSale.forSaleArray.find(item => item.id === parseInt(id))
     )
 };
 

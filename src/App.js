@@ -22,8 +22,7 @@ function App() {
           <Route path='inspectionPage' element={<InspectionPage />} />
           <Route path='forSalePage' element={<ForSalePage />} />
             <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} />
-        </Routes> 
-                
+        </Routes>          
       <Footer />
     </div>
   )

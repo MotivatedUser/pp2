@@ -9,5 +9,4 @@ export const store = configureStore({
     forSale: forSaleReducer,
     login: loginReducer,
   },
-   
 });

@@ -8,61 +8,35 @@ import Error from '../../components/Error';
 
 
 const ForSaleList = () => {
-    
+
     const forSale = useSelector(selectAllForSale);
     console.log('forsale:', forSale);
 
     const isLoading = useSelector((state) => state.forSale.isLoading);
     const errMsg = useSelector((state) => state.forSale.errMsg);
-    
-   return isLoading ? (
-            <Loading />
-        ): errMsg ? (
-            <Error errMsg={errMsg} /> 
-        ): (forSale && forSale.length > 0) ? (
-            <Row className='flex1'>
-                
-                {forSale.map((item) => {
-                    return (
-                        
-                        <Col className='forSaleContainers' key={item.id}>
-                            <ForSaleCard className='' item={item} key={item.id} />
-                            
-                        </Col>
-                    );
-                })}       
-            </Row>
-        ): (
-            <Col md='5' className='mx-auto'>
-                <h4>These machines sell fast, there are no machines for sale at this time. Click button below to List one of your own.</h4>
-             <ForSaleForm forSale={forSale} />
-            </Col>
-        )
-};    
 
+    return isLoading ? (
+        <Loading />
+    ) : errMsg ? (
+        <Error errMsg={errMsg} />
+    ) : (forSale && forSale.length > 0) ? (
+        <Row className='flex1'>
 
-    
-    
-    // if () {
-    //     return (
-    //         <Col md='5' className='m-1'>
-    //             <h4>Machines for Sale</h4>
-    //             {forSale.map((item) => {
-    //                 return 
-    //                 <ForSaleCard key={item.id} item={item} />;
-    //             })}
-    //             <ForSaleForm forSale={forSale} />
-                
-    //         </Col>
-    //     );
+            {forSale.map((item) => {
+                return (
 
-        
-    // }
-         
-    // return (
-    //     
-    // );
-
-   
+                    <Col className='forSaleContainers' key={item.id}>
+                        <ForSaleCard className='' item={item} key={item.id} />
+                    </Col>
+                );
+            })}
+        </Row>
+    ) : (
+        <Col md='5' className='mx-auto'>
+            <h4>These machines sell fast, there are no machines for sale at this time. Click button below to List one of your own.</h4>
+            <ForSaleForm forSale={forSale} />
+        </Col>
+    )
+};
 
 export default ForSaleList;

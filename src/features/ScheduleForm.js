@@ -97,7 +97,8 @@ const ScheduleForm = () => {
                             name='email'
                             placeholder='Email'
                             type='email'
-                            className='form-control' />
+                            className='form-control'
+                            required />
                     </Col>
                 </FormGroup>
 
@@ -106,7 +107,7 @@ const ScheduleForm = () => {
 
                         Machine Type (Pick One)
                     </Label>
-                    <Col md='1'>
+                    <Col md='2'>
                         <Field
                             name='machineType'
                             as='select'
@@ -178,7 +179,7 @@ const ScheduleForm = () => {
                 {/* This range input really shouldn't be here but I wanted to learn how to use it. The range / slider doesn't seem to have much support. From what I researched its becuase it is used so little. */}
                 <FormGroup row>   
                     <Label for='flexible' md='4'> Flexibility with Schedule (between not and Very Flexible)</Label>
-                    <Col md='2' className='slideInput' >
+                    <Col md='5' className='slideInput' >
                         Not Flexible
                             <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' />
                         Flexible

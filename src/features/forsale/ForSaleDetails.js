@@ -1,16 +1,15 @@
-import {Card, CardImg, CardText, CardBody, Col, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Col, CardTitle } from 'reactstrap';
 
-const ForSaleDetails = ({item}) => {
-    const { image, name, seller, sellerContact, cut, ready, description } = item;
+const ForSaleDetails = ({ item }) => {
+    const { image, name, price, seller, sellerContact, cut, ready, description } = item;
 
     return (
         <Col className='col-md-6 col-lg-4 forSaleCardCol'>
             <Card className=''>
                 <CardImg top src={image} alt={name} />
                 <CardBody>
-                    <CardTitle className='titleFontStyle' >{name}</CardTitle>
-                    <CardText className='pFontStyle' >{description} <br /> Width of cut: {cut}" <br /> Ready to use: {ready} <br /> Interested? If so Contact: <br />
-                    {seller}{sellerContact}</CardText>
+                    <CardTitle className='titleFontStyle' >{name}<br/>{price}</CardTitle>
+                    <CardText className='pFontStyle' >{description} <br /> Width of cut: {cut}" <br /> Ready to use: {ready} <br /> <strong>Interested? If so Contact:</strong> <br />                      {seller}<br />{sellerContact}</CardText>
                 </CardBody>
             </Card>
         </Col>

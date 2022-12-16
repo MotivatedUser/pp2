@@ -21,13 +21,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  
-  font-size: calc(10px + 2vmin);
-  color: rgb(94, 24, 24);
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -38,7 +31,6 @@
   margin-left: -10px;
   margin-right: -10px;
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -63,6 +55,7 @@
   left: 0;
   margin-left: 50%;
 }
+
 .card-header-text {
   font-weight: 'bold';
   font-size: 2rem;
@@ -95,28 +88,24 @@
 }
 
 .pFontStyle {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .forSaleListGrid {
-  
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  
   margin: 10px;
   padding: 10px;
-  
 }
 .forSaleCard {
   width: 22rem;
-  
 }
+
 .flex1 {
 justify-content: flex-start;
-
 }
 
 .flex-items {
@@ -124,6 +113,7 @@ justify-content: flex-start;
   height: 60px;
   margin: 10px;
 }
+
 .forSaleCardCol {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -134,23 +124,29 @@ justify-content: flex-start;
  padding: 10px;
  margin: 0 auto;
 }
+
 .slideInput {
   color: red;
   text-shadow: blue;
 }
+
 .disclaimer {
   color: red;
   font-weight: 900;
   font-size: large;
 }
+
 .textColorAnimation {
   text-transform: uppercase;
   background-image: linear-gradient(to right , #f00,white,blue);
+  /* Both background clips added to support Safari versions */
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: animate 20s linear infinite;
   background-size: 500%;
 }
+
 @keyframes animate
 {
   0%
