@@ -17,12 +17,12 @@ const HomePage = () => {
                             <p className="pFontStyle" >So many small engine machines don't get to live through thier useful life, due to user error and lack of maintance. You can change that by properly maintaining your machine. By doing so you are effectivly reducing waste and lowering your machine costs by extending the useful life. Another benefit would be the reduced waste and manafacturing impact. By lowering enviormental cost we all win. And the cost gets lower the longer the machine stays in use.</p>
                         </div>
                         <hr/>
-                        <img className="d-flex mr-3 mb-3 img-fluid mx-auto" src={Lt2000} alt='Riding Mower' />
+                        <img className="d-flex mr-3 mb-3 img-fluid mx-auto rounded" src={Lt2000} alt='Riding Mower' />
                     </div>
                 </div>
                 <div className="col-sm-6 order-sm-first col-md-6 border border-danger mt-1">
                     <div className="media">
-                        <img className="d-flex mr-3 img-fluid mt-3 mx-auto " src={mowerPile} alt='mowerPile' />
+                        <img className="d-flex mr-3 img-fluid mt-3 mx-auto rounded" src={mowerPile} alt='mowerPile' />
                         <div className="media-body allign-self-center">
                             <h3 className='subTitleFontStyle' >Why is important to care for your machines?</h3>
                             <p className="mr-2 pFontStyle">Have you ever bought a small engine machine and when it didn't start blame the quality of the machine? Well you could be right, however, most of the time the machines don't start due to improper maintance. The spark plug always seems the first to get changed, brought on by the old 2 strokes that use to foul plugs. Depending on what the machine does when trying to start will usually provide the solution or atleast the path to a proper diaganosis. It can be easy to order parts and put them on... but finding what part you need is key.</p>

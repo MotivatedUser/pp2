@@ -25,8 +25,8 @@ const ForSaleList = () => {
                 {forSale.map((item) => {
                     return (
                         
-                        <Col className='mx-auto' key={item.id}>
-                            <ForSaleCard className='flex-items' item={item} key={item.id} />
+                        <Col className='forSaleContainers' key={item.id}>
+                            <ForSaleCard className='' item={item} key={item.id} />
                             
                         </Col>
                     );

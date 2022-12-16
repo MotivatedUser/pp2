@@ -1,6 +1,6 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import image from '../app/shared/logo512.png';
+
 // import { validateContactForm } from "../utils/validateContactForm";
 
 
@@ -25,13 +25,13 @@ const ContactForm = () => {
             onSubmit={handleSubmit}
         // validate={validateContactForm}
         >
-            <Form style={{ backgroundImage:`url(${image})`, backgroundSize:'contain', height:800, width:800}} className='mx-auto' >
+            <Form className='mx-auto' >
                 <h1 className='largeTitleFontStyle' >Contact Form</h1>
                 <FormGroup row>
-                    <Label htmlFor='firstName' md='2'>
+                    <Label htmlFor='firstName' md='4'>
                         First Name
                     </Label>
-                    <Col md='10'>
+                    <Col md='3'>
                         <Field
                             name='firstName'
                             placeholder='First Name'
@@ -43,10 +43,10 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='lastName' md='2'>
+                    <Label htmlFor='lastName' md='4'>
                         Last Name
                     </Label>
-                    <Col md='10'>
+                    <Col md='3'>
                         <Field
                             name='lastName'
                             placeholder='Last Name'
@@ -58,10 +58,10 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='phoneNum' md='2'>
+                    <Label htmlFor='phoneNum' md='4'>
                         Phone
                     </Label>
-                    <Col md='10'>
+                    <Col md='3'>
                         <Field
                             name='phoneNum'
                             placeholder='Phone'
@@ -73,10 +73,10 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='email' md='2'>
+                    <Label htmlFor='email' md='4'>
                         Email
                     </Label>
-                    <Col md='10'>
+                    <Col md='3'>
                         <Field
                             name='email'
                             placeholder='Email'
@@ -89,11 +89,11 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label check md={{ size: 4, offset: 1 }}>
+                    <Label check md='4'>
 
                         Best way to contact you?
                     </Label>
-                    <Col md='4'>
+                    <Col md='3'>
                         <Field
                             name='contactType'
                             as='select'
@@ -102,14 +102,15 @@ const ContactForm = () => {
                             <option>By Phone</option>
                             <option>By Text</option>
                             <option>By Email</option>
+                            <option>By Smoke Signal</option>
                         </Field>
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='model' md={{ size: 4, offset: 1 }}>
+                    <Label htmlFor='model' md='4'>
                         Your Machine Model Number
                     </Label>
-                    <Col md='4'>
+                    <Col md='3'>
                         <Field
                             name='model'
                             as='textarea'
@@ -119,7 +120,7 @@ const ContactForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='feedback' md={{ size: 4, offset: 1 }}>
+                    <Label htmlFor='feedback' md='4'>
                         Your Feedback
                     </Label>
                     <Col md='6'>

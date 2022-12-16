@@ -2,11 +2,12 @@ const AboutPage = () => {
     return (
       <>
         <div  className="row row-content mx-auto">
-            <div className="col-sm-6">
+            <div className="col">
                 <h3 className='subTitleFontStyle' >Our Mission</h3>
                 <p>Our mission is to positivily impact our community by offering our services in a way that provides true value, postivitly impacting everything it touches. By offering things like used parts we are doing our part to make the world a cleaner and more sustainable place.</p>
             </div>
-            <div className="col-sm-6">
+            <hr/>
+            <div className="col">
                 <div className="card">
                     <h3 className="card-header bg-primary text-white">Facts At a Glance</h3>
                     <div className="card-body">
@@ -24,7 +25,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="col">
-                <div className="card bg-light mt-3">
+                <div className="card bg-light">
                     <blockquote className="blockquote card-body">
                         <p className="mb-0">"Do it once and do it right and do it quickly"</p>
                         <br />

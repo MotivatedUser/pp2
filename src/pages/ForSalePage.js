@@ -15,8 +15,8 @@ const ForSalePage = () => {
     const forSale = useSelector(selectAllForSale);
 
     return (
-        <Container>
-            <h1 className='largeTitleFontStyle' >Machines for Sale</h1>
+        <Container className='containerForSale'>
+            <h1 className='largeTitleFontStyle ' >Machines for Sale</h1>
             <Div>
             <ForSaleList />
             </Div>

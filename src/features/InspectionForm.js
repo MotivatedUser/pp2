@@ -1,5 +1,5 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
-import { Formik, Field, Form, ErrorMessage } from "formik";
+import { Formik, Field, Form  } from "formik";
 
 
 
@@ -31,10 +31,10 @@ const InspectionForm = () => {
             <h1 className='largeTitleFontStyle'>Inspection Form</h1>
 
                 <FormGroup row>
-                    <Label htmlFor='clientNumber' md='2'>
+                    <Label htmlFor='clientNumber' md='6'>
                         Client Number
                     </Label>
-                    <Col md='10'>
+                    <Col md='2'>
                         <Field 
                         name='clientNumber'
                         id='clientNumber'
@@ -51,7 +51,7 @@ const InspectionForm = () => {
                         /> {' '}
                         Air Filter Condition
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field 
                         name='airFilter'
                         as='select'
@@ -71,7 +71,7 @@ const InspectionForm = () => {
                         /> {' '}
                         Oil Condition
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field 
                         name='oilCondition'
                         as='select'
@@ -91,7 +91,7 @@ const InspectionForm = () => {
                         /> {' '}
                         Blade(s) Condition
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field 
                         name='bladeCondition'
                         as='select'
@@ -111,7 +111,7 @@ const InspectionForm = () => {
                         /> {' '}
                         Number of Blades
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field 
                         name='bladeNum'
                         as='select'
@@ -130,7 +130,7 @@ const InspectionForm = () => {
                        
                         General Machine Condition
                     </Label>
-                    <Col md='4'>
+                    <Col md='2'>
                         <Field 
                         name='machineCondition'
                         as='select'
@@ -145,10 +145,10 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='model' md='2'>
+                    <Label htmlFor='model' md='6'>
                        Machine Model Number
                     </Label>
-                    <Col md='10'>
+                    <Col md='2'>
                         <Field 
                         name='model'
                         as='textarea'
@@ -159,10 +159,10 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='engineModel' md='2'>
+                    <Label htmlFor='engineModel' md='6'>
                        Engine Model Number
                     </Label>
-                    <Col md='10'>
+                    <Col md='2'>
                         <Field 
                         name='engineModel'
                         as='textarea'
@@ -173,10 +173,10 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='techName' md='2'>
+                    <Label htmlFor='techName' md='6'>
                         Inspection Completed By
                     </Label>
-                    <Col md='10'>
+                    <Col md='2'>
                         <Field 
                         name='techName'
                         as='textarea'
@@ -187,20 +187,20 @@ const InspectionForm = () => {
                 </FormGroup>
 
                 <FormGroup row>
-                    <Label htmlFor='addlComments' md='2'>
+                    <Label htmlFor='addlComments' md='3'>
                         Any Additional Comments
                     </Label>
-                    <Col md='10'>
+                    <Col md='7'>
                         <Field 
                         name='addlComments'
                         as='textarea'
-                        rows='6'
+                        rows='3'
                         className='form-control' />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Col md={{size: 10, offset: 2}} >
-                        <Button className='btn btn-lg btn-primary' type='submit' color='primary'> Submit Inspection Report</Button>
+                        <Button className='btn btn-lg btn-danger' type='submit' color='danger'> Submit Inspection Report</Button>
                     </Col>
                 </FormGroup>
             </Form>
