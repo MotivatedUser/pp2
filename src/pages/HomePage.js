@@ -10,7 +10,7 @@ const HomePage = () => {
           
           <div className="container">
             <div className="row row-content align-items-center">
-                <div className="col-sm-6 order-sm-first col-md-6 border border-danger mt-1">
+                <div className="col-sm-6 order-sm-first col-md-6 mt-1">
                     <div className='media'>
                         <div className='media-body' >  
                             <h2 className="subTitleFontStyle">Here to serve our community by keeping our small engines running.</h2>
@@ -20,7 +20,7 @@ const HomePage = () => {
                         <img className="d-flex mr-3 mb-3 img-fluid mx-auto rounded" src={Lt2000} alt='Riding Mower' />
                     </div>
                 </div>
-                <div className="col-sm-6 order-sm-first col-md-6 border border-danger mt-1">
+                <div className="col-sm-6 order-sm-first col-md-6 mt-1">
                     <div className="media">
                         <img className="d-flex mr-3 img-fluid mt-3 mx-auto rounded" src={mowerPile} alt='mowerPile' />
                         <div className="media-body allign-self-center">
@@ -34,7 +34,7 @@ const HomePage = () => {
     
             <div className="row row-content align-items-center border border-primary">
                 <div className="col-sm-4 col-md-3">
-                    <h2 className='subTitleFontStyle' >Why pick the Mobile Mechanic?</h2>
+                    <h2 className='subTitleFontStyle textColorAnimation' >Why pick the Mobile Mechanic?</h2>
                 </div> 
                 <div className="col">   
                     <h3 className='subTitleFontStyle' >Things that set us apart from the rest.</h3>

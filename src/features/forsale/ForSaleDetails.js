@@ -1,7 +1,7 @@
 import {Card, CardImg, CardText, CardBody, Col, CardTitle } from 'reactstrap';
 
 const ForSaleDetails = ({item}) => {
-    const { image, name, seller, cut, ready, description } = item;
+    const { image, name, seller, sellerContact, cut, ready, description } = item;
 
     return (
         <Col className='col-md-6 col-lg-4 forSaleCardCol'>
@@ -10,7 +10,7 @@ const ForSaleDetails = ({item}) => {
                 <CardBody>
                     <CardTitle className='titleFontStyle' >{name}</CardTitle>
                     <CardText className='pFontStyle' >{description} <br /> Width of cut: {cut}" <br /> Ready to use: {ready} <br /> Interested? If so Contact: <br />
-                    {seller}</CardText>
+                    {seller}{sellerContact}</CardText>
                 </CardBody>
             </Card>
         </Col>

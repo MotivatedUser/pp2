@@ -124,7 +124,7 @@ const ScheduleForm = () => {
                     <Label htmlFor='issueDescription' md='4'>
                         Please describe any issues with the machine here.
                     </Label>
-                    <Col md='8'>
+                    <Col md='6'>
                         <Field
                             name='issueDescription'
                             as='textarea'

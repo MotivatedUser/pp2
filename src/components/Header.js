@@ -21,7 +21,7 @@ const Header = () => {
 
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
           <Col>
-            <h1 className='largeTitleFontStyle' >MowerTech Reactstyle</h1>          
+            <h1 className='largeTitleFontStyle textColorAnimation' >MowerTech Reactstyle</h1>          
             <p className='pFontStyle' >4321 Fixit Dr.<br/>YourTown, WA 22233</p>
           </Col>
           
