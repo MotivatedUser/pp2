@@ -1,4 +1,4 @@
-This Portfolio project built by Doug Altermatt demonstrates my learned skill in relation to An example of Formik forms, Redux, React-Router, props, destructuring and mapping arrays to components among other things. Built in NuCamps Dynamic with React Bootcamp course.
+This Portfolio project built by Doug Altermatt demonstrates my learned skill in relation to An example of Formik forms, Redux, React-Router, props, destructuring and mapping arrays to components among other things. Built in NuCamps Dynamic with React Bootcamp course. Github project link https://motivateduser.github.io/pp2
 
 
 # Getting Started with Create React App
