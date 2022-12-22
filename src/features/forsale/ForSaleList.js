@@ -1,10 +1,11 @@
 import { useSelector } from 'react-redux';
-import ForSaleCard from './ForSaleCard';
+
 import { Col, Row } from 'reactstrap';
 import { selectAllForSale } from './forSaleSlice';
 import ForSaleForm from './ForSaleForm';
 import Loading from '../../components/Loading';
 import Error from '../../components/Error';
+import AnimatedForSaleCard from './AnimatedForSaleCard';
 
 
 const ForSaleList = () => {
@@ -26,7 +27,7 @@ const ForSaleList = () => {
                 return (
 
                     <Col className='forSaleContainers' key={item.id}>
-                        <ForSaleCard className='' item={item} key={item.id} />
+                        <AnimatedForSaleCard className='' item={item} key={item.id} />
                     </Col>
                 );
             })}
