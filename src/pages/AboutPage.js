@@ -40,6 +40,7 @@ const AboutPage = () => {
         <div className="row row-content">
             <div className="col col-12">
                 <h3 className='subTitleFontStyle' ><strong>Meet our Employee's</strong></h3>
+                <hr />
                 <h4 className='subTitleFontStyle'>Rocky React - <small>4 Stroke and Electrical Specialists</small></h4>
                 <p className="d-none d-sm-block">Rocky boasts certifications from Briggs & Stratton along with Kohler and Honda. He has been fixing 4 strokes for 10 years.</p>
                 <h4 className='subTitleFontStyle'>Larry Larrie - <small>Carburetor and 2 Stroke Specialist</small></h4>

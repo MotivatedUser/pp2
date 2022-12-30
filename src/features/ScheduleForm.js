@@ -181,7 +181,7 @@ const ScheduleForm = () => {
                     <Label for='flexible' md='4'> Flexibility with Schedule (between not and Very Flexible)</Label>
                     <Col md='5' className='slideInput' >
                         Not Flexible
-                            <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' />
+                            <Field type='range' id='flexible' name='flexible' step='1' min='Not Flexible' max='Flexible' style={{ marginRight: 10, marginLeft: 10 }} />
                         Flexible
                     </Col>
                 </FormGroup>
@@ -194,7 +194,7 @@ const ScheduleForm = () => {
             </Form>
         </Formik>
     )
-};
+}
 
 
-export default ScheduleForm;
+export default ScheduleForm

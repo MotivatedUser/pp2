@@ -6,8 +6,6 @@ import '../App.css';
 import LoginForm from '../features/login/LoginForm';
 
 
-// import { Outlet, Link } from "react-router-dom";
-
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);

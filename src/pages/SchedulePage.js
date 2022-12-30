@@ -3,8 +3,8 @@ import ScheduleForm from "../features/ScheduleForm";
 const SchedulePage = () => {
     return (
       <div>
-    <ScheduleForm />;
-    </div>
+        <ScheduleForm />
+      </div>
     )   
     
   };
