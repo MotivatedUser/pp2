@@ -30,6 +30,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col xs='6' sm='4' className='text-center'>
+                        
                         <h5>Social Media Links</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
@@ -55,8 +56,11 @@ const Footer = () => {
                         >
                             <i className='fa fa-youtube' />
                         </a>
+                        <br />
+                        <a class='top' href='#'>Back to the Top</a>
+
                     </Col>
-                    <Col sm='4' className='text-center'>
+                    <Col sm='4' className='text-center'>                        
                         <a
                             role='button'
                             className='btn btn-link'

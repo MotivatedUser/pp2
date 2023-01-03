@@ -9,14 +9,14 @@ import ForSalePage from './pages/ForSalePage'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
-import Banner from './components/Banner';
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      
       <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='contactPage' element={<ContactPage />} />

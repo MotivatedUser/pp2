@@ -173,3 +173,14 @@ justify-content: flex-start;
   z-index: 100;
   
 }
+.top {
+  top: 40px;
+  padding: 5px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: x-large;
+  color: white;
+  background: rgb(0, 0, 0);
+  border-radius: 80px;
+  position: relative;
+}

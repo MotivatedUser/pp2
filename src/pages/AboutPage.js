@@ -1,6 +1,9 @@
+import Banner from "../components/Banner";
+
 const AboutPage = () => {
     return (
       <>
+        <Banner />
         <div  className="row row-content mx-auto">
             <div className="col">
                 <h3 className='subTitleFontStyle' >Our Mission</h3>
@@ -36,7 +39,7 @@ const AboutPage = () => {
                 </div>
             </div>
         </div>
-
+        
         <div className="row row-content">
             <div className="col col-12">
                 <h3 className='subTitleFontStyle' ><strong>Meet our Employee's</strong></h3>
