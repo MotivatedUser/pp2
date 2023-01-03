@@ -9,19 +9,22 @@ import ForSalePage from './pages/ForSalePage'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
+import Banner from './components/Banner';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Banner />
       <Routes>
-          <Route path='pp2' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='contactPage' element={<ContactPage />} />
           <Route path='aboutPage' element={<AboutPage />} />
           <Route path='schedulePage' element={<SchedulePage />} />
           <Route path='inspectionPage' element={<InspectionPage />} />
           <Route path='forSalePage' element={<ForSalePage />} />
-            <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} />
+          <Route path='/forSalePage/:itemId' element={<ForSaleDetailsPage />} />
         </Routes>          
       <Footer />
     </div>

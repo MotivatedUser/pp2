@@ -160,3 +160,16 @@ justify-content: flex-start;
     background-position: 0% 100%;
   }
 }
+
+.banner {
+  width: 100vw;
+  height: 15vh;
+}
+.bannerH2 {
+  position: relative;
+  font-weight: 900;
+  color: blue;
+  bottom: 40px;
+  z-index: 100;
+  
+}
