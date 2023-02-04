@@ -33,54 +33,85 @@ const ForSaleForm = ({ forSaleId }) => {
                 </ModalHeader>
                 <ModalBody>
                     <Formik initialValues={{ id: '', name: '', cut: '', ready: '', description: '' }} onSubmit={handleSubmit} >
-                        <Form className='mx-auto'>
+                        <Form className='mx-auto' action='/imageUpload' method='post' enctype='multipart/form-data'>
                             <FormGroup>
-                                <Label htmlFor='id' >Unique ID</Label>
+                                {/* <Label htmlFor='id' >Title</Label> */}
 
                                 <Field
                                     name='id'
-                                    placeholder='Unique ID'
+                                    placeholder='Title'
                                     className='form-control'
                                     required
                                 />
 
                             </FormGroup>
+
                             <FormGroup>
-                                <Label htmlFor='name'>Your Name</Label>
+                                {/* <Label htmlFor='name'>Brand and Model</Label> */}
                                 <Field
                                     name='name'
-                                    placeholder='Machine Name / Model'
+                                    placeholder='Brand and Model'
                                     className='form-control'
                                     required
                                 />
-
                             </FormGroup>
+
                             <FormGroup>
-                                <Label htmlFor='cut'>Mower Cut</Label>
+                                <Field
+                                    name='price'
+                                    placeholder='Asking Price'
+                                    className='form-control'
+                                    required
+                                />
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Field
+                                    name='seller'
+                                    placeholder='Contacts Name'
+                                    className='form-control'
+                                    required
+                                />
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Field
+                                    name='sellerContact'
+                                    placeholder='Phone / Email of Seller'
+                                    className='form-control'
+                                    required
+                                />
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Label htmlFor='imageUpload' >Pics sell! Upload up to 4 images here!</Label>
+                                <input type='file' name='imageUpload1' accept='image/*' />
+                                <input type='file' name='imageUpload2' accept='image/*' />
+                                <input type='file' name='imageUpload3' accept='image/*' />
+                                <input type='file' name='imageUpload4' accept='image/*' />
+                            </FormGroup>
+
+                            <FormGroup>
                                 <Field
                                     name='cut'
                                     placeholder='Machine Cutting Width'
                                     className='form-control'
                                     required
                                 />
-
                             </FormGroup>
+
                             <FormGroup>
-                                <Label htmlFor='ready'>Machine is Ready to use</Label>
+                                <Label htmlFor='ready'>Is this machine ready to use?</Label>
                                 <Field
                                     name='ready'
-                                    placeholder='Is it ready to use?'
+                                    placeholder='Yes or No'
                                     className='form-control'
                                     required
                                 />
+                            </FormGroup>
 
-                            </FormGroup>
                             <FormGroup>
-                                <Label htmlFor='imageUpload' >Pics sell! Upload your images here!</Label>
-                                <Field name='imageUpload' accept="image/*" type='file' />
-                            </FormGroup>
-                            <FormGroup>
-                                <Label htmlFor='description'>Description of the Machine (Size, Condition, Aprox Age and any other information you think might help it sell.</Label>
+                                <Label htmlFor='description'>Description of the Machine - Size, Condition, Aprox Age and any other information you think might help it sell.</Label>
                                 <Field
                                     name='description'
                                     as='textarea'

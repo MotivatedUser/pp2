@@ -184,3 +184,10 @@ justify-content: flex-start;
   border-radius: 80px;
   position: relative;
 }
+.top:active {
+  color: rgb(7, 38, 73);
+}
+
+.tableTitle {
+  text-align: start;
+}

@@ -9,6 +9,8 @@ import ForSalePage from './pages/ForSalePage'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ForSaleDetailsPage from './pages/ForSaleDetailsPage';
+import PP2 from './pages/PP2';
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
       
       <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='pp2' element={<PP2 />} />
           <Route path='contactPage' element={<ContactPage />} />
           <Route path='aboutPage' element={<AboutPage />} />
           <Route path='schedulePage' element={<SchedulePage />} />

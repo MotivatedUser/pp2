@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
     return (
         <footer className='site-footer' >
@@ -26,6 +27,9 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link to='/inspectionPage'>Techs Only</Link>
+                            </li>
+                            <li>
+                                <Link to='/pp2'>Back to Resume</Link>
                             </li>
                         </ul>
                     </Col>
@@ -57,8 +61,7 @@ const Footer = () => {
                             <i className='fa fa-youtube' />
                         </a>
                         <br />
-                        <a class='top' href='#'>Back to the Top</a>
-
+                        <a class='top' href='#'><i className='fa fa-chevron-up'></i></a>
                     </Col>
                     <Col sm='4' className='text-center'>                        
                         <a
