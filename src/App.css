@@ -87,6 +87,11 @@
   font-weight: 900;
 }
 
+.smallTitleFontStyle {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .pFontStyle {
   font-size: 1.2rem;
   font-weight: 500;
