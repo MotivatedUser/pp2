@@ -7,14 +7,12 @@ const ForSaleCard = ({item}) => {
     const { id, image, name } = item;
     return (
         <Link to={`${id}`} >
-            <Col className='' >
             <Card  className='forSaleCard' >
                 <CardImg src={image} alt={name} />
                 <CardImgOverlay className='card-header-text' >
                     <CardTitle className='titleFontStyle'>{name}</CardTitle>
                 </CardImgOverlay>
             </Card>
-            </Col>
         </Link>
     );
 };

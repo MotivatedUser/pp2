@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, Col } from 'reactstrap';
+import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
 import '../App.css';
