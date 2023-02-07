@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
     return (
         <footer className='site-footer' >
@@ -27,9 +28,13 @@ const Footer = () => {
                             <li>
                                 <Link to='/inspectionPage'>Techs Only</Link>
                             </li>
+                            <li>
+                                <Link to='/pp2'>Back to Resume</Link>
+                            </li>
                         </ul>
                     </Col>
                     <Col xs='6' sm='4' className='text-center'>
+                        
                         <h5>Social Media Links</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
@@ -55,8 +60,10 @@ const Footer = () => {
                         >
                             <i className='fa fa-youtube' />
                         </a>
+                        <br />
+                        <a class='top' href='#'><i className='fa fa-chevron-up'></i></a>
                     </Col>
-                    <Col sm='4' className='text-center'>
+                    <Col sm='4' className='text-center'>                        
                         <a
                             role='button'
                             className='btn btn-link'

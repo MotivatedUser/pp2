@@ -87,6 +87,11 @@
   font-weight: 900;
 }
 
+.smallTitleFontStyle {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .pFontStyle {
   font-size: 1.2rem;
   font-weight: 500;
@@ -159,4 +164,35 @@ justify-content: flex-start;
   100% {
     background-position: 0% 100%;
   }
+}
+
+.banner {
+  width: 100vw;
+  height: 15vh;
+}
+.bannerH2 {
+  position: relative;
+  font-weight: 900;
+  color: blue;
+  bottom: 40px;
+  z-index: 100;
+  
+}
+.top {
+  top: 40px;
+  padding: 5px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: x-large;
+  color: white;
+  background: rgb(0, 0, 0);
+  border-radius: 80px;
+  position: relative;
+}
+.top:active {
+  color: rgb(7, 38, 73);
+}
+
+.tableTitle {
+  text-align: start;
 }

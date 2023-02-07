@@ -2,12 +2,12 @@
 import mowerPile from '../app/assets/mowerPile.jpg';
 import reviews from '../app/assets/reviews.jpg';
 import Lt2000 from '../app/assets/Lt2000.jpg';
+import Banner from '../components/Banner';
 
 const HomePage = () => {
     return (
       <>
-        
-          
+        <Banner /> 
           <div className="container">
             <div className="row row-content align-items-center">
                 <div className="col-sm-6 order-sm-first col-md-6 mt-1">
