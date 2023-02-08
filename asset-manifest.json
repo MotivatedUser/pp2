@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pp2/static/css/main.37329829.css",
-    "main.js": "/pp2/static/js/main.d47d023e.js",
+    "main.css": "/pp2/static/css/main.a8c0f366.css",
+    "main.js": "/pp2/static/js/main.4444e950.js",
     "static/js/787.5ac1acdb.chunk.js": "/pp2/static/js/787.5ac1acdb.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/pp2/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/pp2/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -14,12 +14,12 @@
     "static/media/cubCadet.jpg": "/pp2/static/media/cubCadet.a07a22e765b635b00e3f.jpg",
     "static/media/logo.svg": "/pp2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pp2/index.html",
-    "main.37329829.css.map": "/pp2/static/css/main.37329829.css.map",
-    "main.d47d023e.js.map": "/pp2/static/js/main.d47d023e.js.map",
+    "main.a8c0f366.css.map": "/pp2/static/css/main.a8c0f366.css.map",
+    "main.4444e950.js.map": "/pp2/static/js/main.4444e950.js.map",
     "787.5ac1acdb.chunk.js.map": "/pp2/static/js/787.5ac1acdb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37329829.css",
-    "static/js/main.d47d023e.js"
+    "static/css/main.a8c0f366.css",
+    "static/js/main.4444e950.js"
   ]
 }
