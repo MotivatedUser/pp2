@@ -193,6 +193,20 @@ justify-content: flex-start;
   color: rgb(7, 38, 73);
 }
 
+/* Tables */
 .tableTitle {
-  text-align: start;
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.tableSubtitle {
+  text-align: right;
+  margin: auto;
+}
+.tableData {
+  text-align: left;
+  margin: auto;
+}
+.tableDataCenter {
+  margin: 20px;
 }

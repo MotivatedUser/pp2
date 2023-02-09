@@ -6,7 +6,6 @@ const PP2 = () => {
             <body>
 
                 <h1>Doug Altermatt</h1>
-                <p>Testing to see if gh-pages updates on push</p>
                 <a
                     role='button'
                     className='btn btn-link'
@@ -48,14 +47,13 @@ const PP2 = () => {
                     <table className="table table-striped">
                         <thead>
                             <tr className="bg-primary text-light">
-                                <th><h2 className='tableTitle'>FRONT END DEVELOPER PROFILE</h2></th>
+                                <th><h2 className='tableTitle textColorAnimation'>FRONT END DEVELOPER PROFILE</h2></th>
 
                             </tr>
                         </thead>
                         <tbody className="table-primary">
                             <tr>
-
-                                <td>Talent to develop, design, and administer user-friendly, intuitive, and visually appealing websites in collaboration with the design and development team. Well-developed aptitude to implement features and functionality using frameworks, debugging and troubleshooting issues, and ensuring website compatibility and performance across devices and platforms. Focused on staying up-to-date with the latest trends in web development technologies and best practices. Equipped with strong attention to detail, communication, problem-solving, and leadership skills.
+                                <td className="tableDataCenter">Talent to develop, design, and administer user-friendly, intuitive, and visually appealing websites in collaboration with the design and development team. Well-developed aptitude to implement features and functionality using frameworks, debugging and troubleshooting issues, and ensuring website compatibility and performance across devices and platforms. Focused on staying up-to-date with the latest trends in web development technologies and best practices. Equipped with strong attention to detail, communication, problem-solving, and leadership skills.
                                 </td>
                             </tr>
                             <tr>
@@ -79,23 +77,23 @@ const PP2 = () => {
                     <table className="table table-striped">
                         <thead>
                             <tr className="bg-primary text-light">
-                                <th><h2 className='tableTitle'>TECHNICAL PROFICIENCIES</h2></th>
+                                <th><h2 className='tableTitle textColorAnimation'>TECHNICAL PROFICIENCIES</h2></th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody className="table-primary">
                             <tr>
-                                <th>Platforms:</th>
-                                <td>HTML, CSS, Bootstrap, JavaScript, React, React-Native, Node, Google Cloud, Firebase
+                                <th className="tableSubtitle" >Platforms:</th>
+                                <td className="tableData" >HTML, CSS, Bootstrap, JavaScript, React, React-Native, Node, Google Cloud, Firebase
                                 </td>
                             </tr>
                             <tr>
-                                <th>Tools:</th>
-                                <td>Git/GitHub, VS Code, Expo Snacks, Android-Studio and Language associated libraries</td>
+                                <th className="tableSubtitle" >Tools:</th>
+                                <td className="tableData" >Git/GitHub, VS Code, Expo Snacks, Android-Studio and Language associated libraries</td>
                             </tr>
                             <tr>
-                                <th>Competencies:</th>
-                                <td>Strategic Business Planning & Analysis, Web Designing & Development, Technical Troubleshooting, SWOT Analysis, Rapport Building, Team Coordination & Leadership, Project Management, Client Requirements Analysis, Client Engagement, Operations Management, Resources Allocation, Risk Mitigation, Vendor/Supplier Management, Effective Communication, Conflict Resolution
+                                <th className="tableSubtitle" >Competencies:</th>
+                                <td className="tableData" >Strategic Business Planning & Analysis, Web Designing & Development, Technical Troubleshooting, SWOT Analysis, Rapport Building, Team Coordination & Leadership, Project Management, Client Requirements Analysis, Client Engagement, Operations Management, Resources Allocation, Risk Mitigation, Vendor/Supplier Management, Effective Communication, Conflict Resolution
                                 </td>
                             </tr>
                         </tbody>
@@ -106,28 +104,28 @@ const PP2 = () => {
                     <table className="table table-striped">
                         <thead>
                             <tr className="bg-primary text-light">
-                                <th><h2 className='tableTitle'>EDUCATION</h2></th>
+                                <th><h2 className='tableTitle textColorAnimation'>EDUCATION</h2></th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody className="table-primary">
                             <tr>
-                                <th>NUCAMP</th>
-                                <td>Full Stack Web and Mobile Development Bootcamp - Honors
+                                <th className="tableSubtitle" >NUCAMP</th>
+                                <td className="tableData" >Full Stack Web and Mobile Development Bootcamp - Honors
                                 </td>
                             </tr>
                             <tr>
-                                <th>FreeCodeCamp</th>
-                                <td>Certifications in Responsive Web Design | JavaScript Algorithms | Data Structures | Front End Development Libraries </td>
+                                <th className="tableSubtitle" >FreeCodeCamp</th>
+                                <td className="tableData" >Certifications in Responsive Web Design | JavaScript Algorithms | Data Structures | Front End Development Libraries </td>
                             </tr>
                             <tr>
-                                <th>Spokane Community College (SCC)</th>
-                                <td>AAS General Business, Integrated Business & Entrepreneurship
+                                <th className="tableSubtitle" >Spokane Community College (SCC)</th>
+                                <td className="tableData" >AAS General Business, Integrated Business & Entrepreneurship
                                 </td>
                             </tr>
                             <tr>
-                                <th>North Idaho College (NIC)</th>
-                                <td>Technical Certificate, Outdoor Power and Recreational Vehicle Repair
+                                <th className="tableSubtitle" >North Idaho College (NIC)</th>
+                                <td className="tableData" >Technical Certificate, Outdoor Power and Recreational Vehicle Repair
                                 </td>
                             </tr>
                         </tbody>
@@ -138,17 +136,17 @@ const PP2 = () => {
                     <table className="table table-striped">
                         <thead>
                             <tr className="bg-primary text-light">
-                                <th><h2 className='tableTitle'>PROFESSIONAL EXPERIENCE</h2></th>
+                                <th><h2 className='tableTitle textColorAnimation'>PROFESSIONAL EXPERIENCE</h2></th>
                                 <th></th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody className="table-primary">
                             <tr>
-                                <th>Small Engine Rehab & Repair, Newman Lake</th>
-                                <td>Oversaw and streamlined day-to-day operations, including project management, work flow management, and client engagement
+                                <th className="tableSubtitle" >Small Engine Rehab & Repair, Newman Lake</th>
+                                <td className="tableData" >Oversaw and streamlined day-to-day operations, including project management, work flow management, and client engagement
                                 </td>
-                                <td>CEO/Operator 2010-2020</td>
+                                <td className="tableData" >CEO/Operator 2010-2020</td>
                             </tr>
                         </tbody>
                     </table>
