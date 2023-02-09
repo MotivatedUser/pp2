@@ -6,7 +6,7 @@ const PP2 = () => {
             <body>
 
                 <h1>Doug Altermatt</h1>
-
+                <p>Testing to see if gh-pages updates on push</p>
                 <a
                     role='button'
                     className='btn btn-link'
@@ -39,10 +39,10 @@ const PP2 = () => {
                 </a>
                 <br />
 
-            {/* image will end up being profile picture */}
+                {/* image will end up being profile picture */}
                 <img src={OIP} alt="project management diagram" />
-                
-                
+
+
 
                 <div className="table-responsive">
                     <table className="table table-striped">
