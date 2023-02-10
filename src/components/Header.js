@@ -14,7 +14,7 @@ const Header = () => {
       <NavbarBrand className='navbar-brand' href='/' >
         <img src={logo} alt='React Logo' className='float-start App-logo' style={{ height: 180, width: 180 }} />
         </NavbarBrand>
-        <div className='col-7'>
+        <div className='col-9'>
           <h1 className='largeTitleFontStyle textColorAnimation' >MowerTech Reactstyle</h1>
           <p className='pFontStyle' >4321 Fixit Dr.<br />YourTown, WA 22233</p>
           <h5 className='smallTitleFontStyle pp2H1' >Thanks for visiting my React Project. To find out more about the creator be sure to click the "Back to Resume" link.</h5>
