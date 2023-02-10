@@ -1,11 +1,15 @@
+import { Row } from 'reactstrap';
 import OIP from '../app/assets/OIP.jpg';
+import ImageSlider from '../components/ImageSlider';
+import { SliderData } from '../components/SliderData';
+
 
 const PP2 = () => {
     return (
         <>
             <body>
 
-                <h1>Doug Altermatt</h1>
+                <h1 className="pp2H1">Doug Altermatt</h1>
                 <a
                     role='button'
                     className='btn btn-link'
@@ -39,7 +43,11 @@ const PP2 = () => {
                 <br />
 
                 {/* image will end up being profile picture */}
-                <img src={OIP} alt="project management diagram" />
+                <div>
+                    {/* <img src={OIP} alt="project management diagram" />
+                    <img src={OIP} alt="project management diagram" /> */}
+                    <ImageSlider slides={SliderData} />
+                </div>
 
 
 
