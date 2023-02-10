@@ -28,22 +28,22 @@ const Header = () => {
           <LoginForm className='mt-2' />
           <NavItem>
             <NavLink className='nav-link' to='/'>
-              <i className='fa fa-home fa-lg textColorAnimation' /> Home
+              <i className='fa fa-home fa-lg' /> Home
             </NavLink>
             <NavLink className='nav-link' to='/aboutPage'>
-              <i className='fa fa-star fa-lg textColorAnimation' /> About Us
+              <i className='fa fa-star fa-lg' /> About Us
             </NavLink>
             <NavLink className='nav-link' to='/contactPage'>
-              <i className='fa fa-phone fa-lg textColorAnimation' /> Contact Us
+              <i className='fa fa-phone fa-lg' /> Contact Us
             </NavLink>
             <NavLink className='nav-link' to='/schedulePage'>
-              <i className='fa fa-clipboard fa-lg textColorAnimation' /> Schedule Now
+              <i className='fa fa-clipboard fa-lg' /> Schedule Now
             </NavLink>
             <NavLink className='nav-link' to='/forSalePage'>
-              <i className='fa fa-recycle fa-lg textColorAnimation' /> Machines For Sale
+              <i className='fa fa-recycle fa-lg' /> Machines For Sale
             </NavLink>
             <NavLink className='nav-link' to='/inspectionPage'>
-              <i className='fa fa-user fa-lg textColorAnimation' />  Techs Only
+              <i className='fa fa-user fa-lg' />  Techs Only
             </NavLink>
             <NavLink className='nav-link' to='/pp2'>
               <i className='fa fa-handshake-o fa-lg textColorAnimation' />  Back to Resume

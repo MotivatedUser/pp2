@@ -220,7 +220,7 @@ justify-content: flex-start;
 /* React Image Slide */
 .slider{
   position: relative;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,7 +260,5 @@ justify-content: flex-start;
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-
+  transition-duration: .5s;
 }
