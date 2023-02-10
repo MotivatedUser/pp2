@@ -220,7 +220,7 @@ justify-content: flex-start;
 /* React Image Slide */
 .slider{
   position: relative;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,23 +235,21 @@ justify-content: flex-start;
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 25%;
+  right: 28%;
   font-size: 3rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
-  user-select: none;
 }
 
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 28%;
   font-size: 3rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
-  user-select: none;
 }
 .slide {
   opacity: 0;
@@ -260,7 +258,5 @@ justify-content: flex-start;
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-
+  transition-duration: .5s;
 }
