@@ -46,7 +46,7 @@ const Header = () => {
               <i className='fa fa-user fa-lg' />  Techs Only
             </NavLink>
             <NavLink className='nav-link' to='/pp2'>
-              <i className='fa fa-handshake-o fa-lg textColorAnimation' />  Back to Resume
+              <i className='fa fa-handshake-o fa-lg  textColorAnimation' />  Back to Resume
             </NavLink>
           </NavItem>
         </Nav>
