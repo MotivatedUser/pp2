@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pp2/static/css/main.6b94a6f7.css",
+    "main.js": "/pp2/static/js/main.0437cbe6.js",
+    "static/js/787.5ac1acdb.chunk.js": "/pp2/static/js/787.5ac1acdb.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/pp2/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/pp2/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/pp2/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/pp2/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/pp2/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Lt2000.jpg": "/pp2/static/media/Lt2000.cc8530c0dd61b7f7bc4b.jpg",
+    "static/media/mowerPile.jpg": "/pp2/static/media/mowerPile.96fd0539cc03a45a263a.jpg",
+    "static/media/kungfuMowing.jpg": "/pp2/static/media/kungfuMowing.2babf15f14eb3a59a113.jpg",
+    "static/media/cubCadet.jpg": "/pp2/static/media/cubCadet.a07a22e765b635b00e3f.jpg",
+    "static/media/logo.svg": "/pp2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pp2/index.html",
+    "main.6b94a6f7.css.map": "/pp2/static/css/main.6b94a6f7.css.map",
+    "main.0437cbe6.js.map": "/pp2/static/js/main.0437cbe6.js.map",
+    "787.5ac1acdb.chunk.js.map": "/pp2/static/js/787.5ac1acdb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b94a6f7.css",
+    "static/js/main.0437cbe6.js"
+  ]
+}
