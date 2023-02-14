@@ -24,6 +24,7 @@ const ForSaleForm = ({ forSaleId }) => {
 
     return (
         <>
+            
             <Button outline onClick={() => setModalOpen(true)}>
                 <i className='fa fa-pencil fa-lg' /> List Machine Here
             </Button>
