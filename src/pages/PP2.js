@@ -34,7 +34,7 @@ const PP2 = () => {
                 </a> |
                 <a
                     role='button'
-                    classname='btn btn-link'
+                    className='btn btn-link'
                     href='https://www.google.com/maps/place/Newman+Lake'
                 >
                     <i className='fa fa-location-arrow' />
