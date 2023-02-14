@@ -113,6 +113,7 @@ const ScheduleForm = () => {
                             as='select'
                             className='form-control'
                             required >
+                            <option>Select an option</option>
                             <option>Mower</option>
                             <option>Snow Blower</option>
                             <option>Tiller</option>
@@ -128,6 +129,7 @@ const ScheduleForm = () => {
                     <Col md='6'>
                         <Field
                             name='issueDescription'
+                            placeholder='Please describe any issues your machine is experiencing and / or the purpose of the appointment.'
                             as='textarea'
                             rows='2'
                             className='form-control' />
@@ -144,6 +146,7 @@ const ScheduleForm = () => {
                             name='budget'
                             as='select'
                             className='form-control' >
+                            <option>Select an option</option>
                             <option>Fix it all</option>
                             <option>Make it run good</option>
                             <option>Make it work</option>
@@ -168,6 +171,7 @@ const ScheduleForm = () => {
                             as='select'
                             className='form-control'
                             required >
+                            <option>Select an option</option>
                             <option>We will drop it off at the shop</option>
                             <option>We need transportation for the machine both ways ($80 within 15 miles)</option>
                             <option>Machine Donation / Recycling (No pickup Fee)</option>
@@ -188,7 +192,7 @@ const ScheduleForm = () => {
                 <FormGroup row>
                     <Col md={{size: 10, offset: 1}} >
                         <Button className='btn btn-lg btn-primary submit-scheduling-btn' type='submit' color='primary'> Submit Scheduling Request </Button>
-                        <p className='disclaimer' >If you picked Transportation for your machine, the Transportation Fee will be due scheduling confirmation.<br/> Does not apply to machine donations.</p>
+                        <p className='disclaimer mt-2' >If you selected Transportation for your machine, the Transportation Fee will be due at the time of scheduling confirmation.(Aprox 24-48 Hours) <br/> There are no fee's for transportation of donated machines. </p>
                     </Col>
                 </FormGroup>
             </Form>

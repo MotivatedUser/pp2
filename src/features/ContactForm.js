@@ -133,7 +133,7 @@ const ContactForm = () => {
                 </FormGroup>
                 <FormGroup row>
                     <Col md={{ size: 10, offset: 2 }} >
-                        <Button type='submit' color='danger'> Send Feedback</Button>
+                        <Button type='submit' color='danger'> Send Contact Request</Button>
                     </Col>
                 </FormGroup>
             </Form>

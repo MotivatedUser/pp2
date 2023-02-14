@@ -29,6 +29,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+            
             <div className="col">
                 <div className="card bg-light">
                     <blockquote className="blockquote card-body">
