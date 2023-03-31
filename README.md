@@ -1,5 +1,26 @@
-This Portfolio project built by Doug Altermatt demonstrates my learned skill in relation to An example of Formik forms, Redux, React-Router, props, destructuring and mapping arrays to components among other things. Built in NuCamps Dynamic with React Bootcamp course. Github project link https://motivateduser.github.io/pp2
+Small Engine Website
+This is a mock website for a small engine business that features pages for machines for sale, a schedule, and general information about the company. The app was built using React, and includes additional libraries such as Redux, React Router, Formik, and React Spring for animation effects.
 
+Technologies Used
+The following technologies were used to build this app:
+
+React
+React DOM
+React Router
+Redux
+Formik
+React Spring
+Bootstrap
+Bootstrap Social
+Styled Components
+Reactstrap
+Font Awesome
+React Icons
+GitHub
+GitHub Pages
+
+Learning Outcome
+By completing this project, I gained experience in building a React web application from scratch, and learned how to incorporate additional libraries such as Redux, React Router, and Formik to enhance the functionality of the app. I also gained experience in using React Spring for animation effects and styling the app using Bootstrap, Reactstrap, and Styled Components. Additionally, I learned how to deploy the app to GitHub Pages and gained experience in using GitHub for version control.
 
 # Getting Started with Create React App
 
