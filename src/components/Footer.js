@@ -28,9 +28,6 @@ const Footer = () => {
                             <li>
                                 <Link to='/inspectionPage'>Techs Only</Link>
                             </li>
-                            <li>
-                                <Link to='/pp2'>Back to Resume</Link>
-                            </li>
                         </ul>
                     </Col>
                     <Col xs='6' sm='4' className='text-center'>
@@ -74,7 +71,7 @@ const Footer = () => {
                         <br />
                         <a
                             role='button'
-                            className='btn btn-link'
+                            className='btn btn-link custom-btn-link'
                             href='mailto:notreal@notreal.co'
                         >
                             <i className='fa fa-envelope-o' /> MowerGuy@MowerTech.com
